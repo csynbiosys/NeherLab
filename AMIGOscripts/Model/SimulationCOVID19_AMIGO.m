@@ -1,8 +1,8 @@
 
 %% Input (time varying parameter)
 M_Ty = [0, 40, 60]/100;
-M_Tx = [daysact('1-feb-2002',  '1-feb-2002'), daysact('1-feb-2002',  '20-mar-2002'), daysact('1-feb-2002',  '25-mar-2002')];
-T_endx = daysact('1-feb-2002',  '1-sep-2002');
+M_Tx = [daysact('1-feb-2020',  '1-feb-2020'), daysact('1-feb-2020',  '20-mar-2020'), daysact('1-feb-2020',  '25-mar-2020')];
+T_endx = daysact('1-feb-2020',  '1-sep-2020');
 
 %% Directory of AMIGO reults and others
 foldnam = 'TestNeherModelCovid19_Rep1';

@@ -128,7 +128,7 @@ model.eqns=...                                                              % Eq
                 
 % Example parameters to compare with webapp results (United States)   
 % Phase
-NumDays = daysact('1-feb-2002',  '1-sep-2002');
+NumDays = daysact('1-feb-2020',  '1-sep-2020');
 month2day = @(x) x*30+15;
 cp = cos(2*pi*((NumDays/365)-(month2day(0)/365)));
 
