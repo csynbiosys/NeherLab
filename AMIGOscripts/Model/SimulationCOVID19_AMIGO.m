@@ -39,7 +39,7 @@ inputs.pathd.runident       = 'initial_setup';
 % Definition of initial conditions
 agess = [39721484, 42332393, 46094077, 44668271, 40348398, 42120077, 38488173, 24082598, 13147180];
 pop  = zeros(9, 9);
-ages = ages / sum(ages);
+ages = agess / sum(agess);
 sizes = sum(agess);
 cases = 9;
 
