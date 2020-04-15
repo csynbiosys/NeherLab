@@ -1,3 +1,5 @@
+%% To Do
+    % Generalise things once it works fine
 
 %% Input (time varying parameter)
 M_Ty = [0, 40, 60]/100;

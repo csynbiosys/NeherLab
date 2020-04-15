@@ -33,8 +33,9 @@ end
 plot(simCov19.sim.tsim{1}+1, CD)
 legend('S','I','H','C','R','cD')
 set(gca, 'YScale', 'log')
-
-
+ylabel('People')
+xlabel('time(days)')
+title('Time Period: 1-feb-2020 to 1-sep-2020')
 
 
 
