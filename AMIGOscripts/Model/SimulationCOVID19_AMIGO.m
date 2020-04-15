@@ -28,7 +28,7 @@ clear pe_results;
 clear pe_inputs;
 clear inputs;
 
-model = COVID19_NeherModel;
+model = COVID19_NeherModel_V2;
 inputs.model = model;
 inputs.pathd.results_folder = results_folder;                        
 inputs.pathd.short_name     = short_name;
