@@ -18,7 +18,7 @@ fclose(fid);
 startTime = datenum(now);
 
 results_folder = strcat('TestNeherModelCovid19',datestr(now,'yyyy-mm-dd-HHMMSS'));
-short_name     = strcat('TNMCov19',int2str(epcc_exps));
+short_name     = strcat('TNMCov19',int2str(1));
 
 %% Definition of AMIGO variables for inputs file
 clear model;
@@ -40,17 +40,17 @@ inputs.pathd.runident       = 'initial_setup';
 ages = [39721484, 42332393, 46094077, 44668271, 40348398, 42120077, 38488173, 24082598, 13147180];
 pop  = zeros(9, 9);
 ages = ages / sum(ages);
-size = 330000000;
+sizes = 330000000;
 cases = 9;
 
-pop(1, :) = size * ages;
+pop(1, :) = sizes * ages;
 pop(1, :) = pop(1, :) - cases*ages;
 pop(5, :) = pop(5, :) + cases*ages*0.3;
 pop(2, :) = pop(2, :) + cases*ages*0.7/3;
 pop(3, :) = pop(3, :) + cases*ages*0.7/3;
 pop(4, :) = pop(4, :) + cases*ages*0.7/3;
 
-y0 = pop(:);
+y0 = pop(:)';
 
 % Time definition
 duration = T_endx;               % Duration in of the experiment (days)
@@ -82,14 +82,14 @@ newExps.obs{1} = char('Infected0 = I_0','Hospitalised0 = H_0','Critical0 = C_0',
 newExps.exp_y0{1}=y0;                                      % Initial condition for the experiment    
 
 newExps.t_f{1}=duration;                                   % Experiment duration
-newExps.n_s{1}=duration+1;                             % Number of sampling times
-newExps.t_s{1}=0:duration ;                              % Times of samples
+newExps.n_s{1}=duration;                             % Number of sampling times
+newExps.t_s{1}=0:duration-1;                              % Times of samples
 
 newExps.u_interp{1}='step';                                % Interpolating function for the input
 newExps.n_steps{1}=length(M_Ty);                  % Number of steps in the input
 newExps.u{1}= M_Ty;                                     % Time course of mitigation measures values for the input
-newExps.t_con{1}=[M_Ty,T_endx];                     % Switching times
-
+newExps.t_con{1}=[M_Tx-1,T_endx-1];                     % Switching times
+newExps.t_con{1}(1) = 0;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mock the experiment
@@ -108,10 +108,6 @@ inputs.ivpsol.rtol=1.0D-10;
 inputs.ivpsol.atol=1.0D-10;
 
 inputs.plotd.plotlevel='noplot';
-
-inputs.pathd.results_folder = results_folder;                        
-inputs.pathd.short_name     = short_name;
-inputs.pathd.runident       = strcat('sim-',int2str(epcc_exps));
 
 AMIGO_Prep(inputs);
 

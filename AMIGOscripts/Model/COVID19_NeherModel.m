@@ -135,7 +135,7 @@ cp = cos(2*pi*((NumDays/365)-(month2day(0)/365)));
 % Age deppendent parameters
 confirmed = ([5, 5, 10, 15, 20, 25, 30, 40, 50]) / 100;
 severe    = ([1, 3, 3, 3, 6, 10, 25, 35, 50]) / 100;
-severe    =  severe*confirmed;
+severe    =  severe.*confirmed;
 critical  = ([5, 10, 10, 15, 20, 25, 35, 45, 55]) / 100;
 fatality  = ([30, 30, 30, 30, 30, 40, 40, 50, 50]) / 100;
 % recovery  = 1 - severe;
