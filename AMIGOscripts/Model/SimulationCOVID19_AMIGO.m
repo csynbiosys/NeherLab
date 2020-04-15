@@ -104,8 +104,8 @@ inputs.exps.std_dev{1}=[0.0 0.0];
 %% SIMULATION
 inputs.ivpsol.ivpsolver='cvodes';
 inputs.ivpsol.senssolver='cvodes';
-inputs.ivpsol.rtol=1.0D-10;
-inputs.ivpsol.atol=1.0D-10;
+inputs.ivpsol.rtol=1.0D-16;
+inputs.ivpsol.atol=1.0D-16;
 
 inputs.plotd.plotlevel='noplot';
 
