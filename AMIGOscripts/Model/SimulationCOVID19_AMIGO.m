@@ -17,7 +17,7 @@ fclose(fid);
 
 startTime = datenum(now);
 
-results_folder = strcat('TestNeherModelCovid19',datestr(now,'yyyy-mm-dd-HHMMSS'));
+results_folder = strcat('TestNeherModelCovid19_V2',datestr(now,'yyyy-mm-dd-HHMMSS'));
 short_name     = strcat('TNMCov19',int2str(1));
 
 %% Definition of AMIGO variables for inputs file
