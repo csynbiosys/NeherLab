@@ -1,6 +1,6 @@
 
 %% Input (time varying parameter)
-M_Ty = [0, 0.40, 0.60];
+M_Ty = [0, 40, 60]/100;
 M_Tx = [daysact('1-feb-2002',  '1-feb-2002'), daysact('1-feb-2002',  '20-mar-2002'), daysact('1-feb-2002',  '25-mar-2002')];
 T_endx = daysact('1-feb-2002',  '1-sep-2002');
 
@@ -37,10 +37,10 @@ inputs.pathd.runident       = 'initial_setup';
 %% Experiment
 
 % Definition of initial conditions
-ages = [39721484, 42332393, 46094077, 44668271, 40348398, 42120077, 38488173, 24082598, 13147180];
+agess = [39721484, 42332393, 46094077, 44668271, 40348398, 42120077, 38488173, 24082598, 13147180];
 pop  = zeros(9, 9);
 ages = ages / sum(ages);
-sizes = 330000000;
+sizes = sum(agess);
 cases = 9;
 
 pop(1, :) = sizes * ages;
@@ -103,7 +103,7 @@ inputs.exps.std_dev{1}=[0.0 0.0];
 
 %% SIMULATION
 inputs.ivpsol.ivpsolver='cvodes';
-inputs.ivpsol.senssolver='cvodes';
+inputs.ivpsol.senssolver='fdsens5';
 inputs.ivpsol.rtol=1.0D-16;
 inputs.ivpsol.atol=1.0D-16;
 
