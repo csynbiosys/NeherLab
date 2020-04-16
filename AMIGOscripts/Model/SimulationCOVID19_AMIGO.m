@@ -30,7 +30,7 @@ clear pe_results;
 clear pe_inputs;
 clear inputs;
 
-model = COVID19_NeherModel_V2;
+model = COVID19_NeherModel;
 inputs.model = model;
 inputs.pathd.results_folder = results_folder;                        
 inputs.pathd.short_name     = short_name;
@@ -45,7 +45,7 @@ ages = agess / sum(agess);
 sizes = sum(agess);
 cases = 9;
 
-pop(1, :) = sizes * ages;
+pop(1, :) = agess;
 pop(1, :) = pop(1, :) - cases*ages;
 pop(5, :) = pop(5, :) + cases*ages*0.3;
 pop(2, :) = pop(2, :) + cases*ages*0.7/3;
