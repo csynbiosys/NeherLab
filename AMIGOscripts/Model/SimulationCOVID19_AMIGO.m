@@ -1,3 +1,5 @@
+%% To Do
+    % Generalise things once it works fine
 
 %% Input (time varying parameter)
 M_Ty = [0, 40, 60]/100;
@@ -43,7 +45,7 @@ ages = agess / sum(agess);
 sizes = sum(agess);
 cases = 9;
 
-pop(1, :) = sizes * ages;
+pop(1, :) = agess;
 pop(1, :) = pop(1, :) - cases*ages;
 pop(5, :) = pop(5, :) + cases*ages*0.3;
 pop(2, :) = pop(2, :) + cases*ages*0.7/3;

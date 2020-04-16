@@ -21,6 +21,13 @@ for i=1:length(cumResCov19(:,9))
     CD(i,1) = sum(cumResCov19(1:i,9));
 end
 
+%% Cummulative recovered
+CR = zeros(size(cumResCov19(:,8)));
+for i=1:length(cumResCov19(:,8))
+    CR(i,1) = sum(cumResCov19(1:i,8));
+end
+
+
 %% Plot results
 
 figure
@@ -33,8 +40,9 @@ end
 plot(simCov19.sim.tsim{1}+1, CD)
 legend('S','I','H','C','R','cD')
 set(gca, 'YScale', 'log')
-
-
+ylabel('People')
+xlabel('time(days)')
+title('Time Period: 1-feb-2020 to 1-sep-2020')
 
 
 
