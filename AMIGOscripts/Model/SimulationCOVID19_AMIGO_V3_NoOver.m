@@ -30,7 +30,7 @@ clear pe_results;
 clear pe_inputs;
 clear inputs;
 
-model = COVID19_NeherModel_V3;
+model = COVID19_NeherModel_V3_NoOver;
 inputs.model = model;
 inputs.model.par=ParamsModel();
 
@@ -42,7 +42,7 @@ inputs.pathd.runident       = 'initial_setup';
 
 % Definition of initial conditions
 agess = [39721484, 42332393, 46094077, 44668271, 40348398, 42120077, 38488173, 24082598, 13147180];
-pop  = zeros(12, 9);
+pop  = zeros(11, 9);
 ages = agess / sum(agess);
 sizes = sum(agess);
 cases = 9;
@@ -62,10 +62,10 @@ duration = T_endx;               % Duration in of the experiment (days)
 % Experiment
 clear newExps;
 newExps.n_exp = 1;                                         % Number of experiments 
-newExps.n_obs{1}=8;                                        % Number of observables per experiment        
-newExps.obs_names{1} = char('Infected0','Hospitalised0', 'Critical0', 'Recovered0', 'Dead0', 'Overflow0', 'CumulativeHospital', 'CumulativeCritical');
+newExps.n_obs{1}=7;                                        % Number of observables per experiment        
+newExps.obs_names{1} = char('Infected0','Hospitalised0', 'Critical0', 'Recovered0', 'Dead0', 'CumulativeHospital', 'CumulativeCritical');
                         
-newExps.obs{1} = char('Infected0 = Inf_0','Hospitalised0 = Sev_0','Critical0 = Cri_0','Recovered0 = Rec_0','Dead0 = Fat_0', 'Overflow0 = Ovf_0', 'CumulativeHospital = CumHos_0', 'CumulativeCritical = CumCri_0');% Name of the observables 
+newExps.obs{1} = char('Infected0 = Inf_0','Hospitalised0 = Sev_0','Critical0 = Cri_0','Recovered0 = Rec_0','Dead0 = Fat_0', 'CumulativeHospital = CumHos_0', 'CumulativeCritical = CumCri_0');% Name of the observables 
 
 newExps.exp_y0{1}=y0;                                      % Initial condition for the experiment    
 
@@ -95,13 +95,13 @@ inputs.ivpsol.senssolver='fdsens5';
 inputs.ivpsol.rtol=1.0D-13;
 inputs.ivpsol.atol=1.0D-13;
 
-inputs.plotd.plotlevel='full';
+inputs.plotd.plotlevel='noplot';
 
 AMIGO_Prep(inputs);
 
 simCov19 = AMIGO_SModel(inputs);
 
-save('TestSimulationNeherModelAMIGO_V3.mat','simCov19')
+save('TestSimulationNeherModelAMIGO_V3_NoOver.mat','simCov19')
 
 
 
