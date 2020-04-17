@@ -11,9 +11,8 @@ da = 1:maxd; % String of days of the simulation
 cp = cos(2*pi*(((da+difda)/365)-(month2day(peakMonth)/365))); % Cosine function
 
 M_Ty = repelem(1-[40]/100, length(cp)); % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
-M_Tx = 1:length(cp); % Time vector for the input
-T_endx = length(cp); % Maximum number of days. It should be equal to maxd
-
+M_Tx = 1:length(cp); % Time 
+T_endx = length(cp);
 
 %% Directory of AMIGO reults and others
 foldnam = 'TestNeherModelCovid19_Rep3';
@@ -63,7 +62,7 @@ pop(2, :) = pop(2, :) + cases*ages*0.7/3;
 pop(3, :) = pop(3, :) + cases*ages*0.7/3;
 pop(4, :) = pop(4, :) + cases*ages*0.7/3;
 
-y0 = pop(:)';
+y0 = round(pop(:)');
 
 % Time definition
 duration = T_endx;               % Duration in of the experiment (days)
@@ -80,13 +79,13 @@ newExps.exp_y0{1}=y0;                                      % Initial condition f
 
 newExps.t_f{1}=duration;                                   % Experiment duration
 newExps.n_s{1}=duration;                             % Number of sampling times
-newExps.t_s{1}=0:duration;                              % Times of samples
+newExps.t_s{1}=0:duration-1;                              % Times of samples
 
 newExps.u_interp{1}='step';                                % Interpolating function for the input
 newExps.n_steps{1}=length(M_Ty);                  % Number of steps in the input
 newExps.u{1}= [M_Ty;cp];                                     % Time course of mitigation measures values for the input
-newExps.t_con{1}=[M_Tx,T_endx];                     % Switching times
-% newExps.t_con{1}(1) = 0;
+newExps.t_con{1}=[M_Tx-1,T_endx-1];                     % Switching times
+newExps.t_con{1}(1) = 0;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mock the experiment
@@ -108,11 +107,7 @@ inputs.plotd.plotlevel='noplot';
 
 AMIGO_Prep(inputs);
 
-warning('off','MATLAB:MKDIR:DirectoryExists')
-addpath('AMIGOChanged')
-
-simCov19 = AMIGO_SModel_NoVer(inputs);
-
+simCov19 = AMIGO_SModel(inputs);
 
 save('TestSimulationNeherModelAMIGO_V3_NoOver.mat','simCov19')
 
