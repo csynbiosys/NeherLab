@@ -34,7 +34,7 @@ figure
 hold on
 for i=1:11
     if i~=2 && i~=3 && i~=4
-        plot(simCov19.sim.tsim{1}+1, cumResCov19(:,i))
+        plot(simCov19.sim.tsim{1}+1, round(cumResCov19(:,i)))
     end
 end
 % plot(simCov19.sim.tsim{1}+1, CD)
