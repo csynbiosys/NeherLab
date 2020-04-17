@@ -2,7 +2,7 @@
     % Generalise things once it works fine
 
 %% Input (time varying parameter)
-M_Ty = [0, 40, 60]/100;
+M_Ty = [0.0001, 40, 60]/100;
 M_Tx = [daysact('1-feb-2020',  '1-feb-2020'), daysact('1-feb-2020',  '20-mar-2020'), daysact('1-feb-2020',  '25-mar-2020')];
 T_endx = daysact('1-feb-2020',  '1-sep-2020');
 
