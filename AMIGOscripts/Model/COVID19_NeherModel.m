@@ -128,9 +128,9 @@ model.eqns=...                                                              % Eq
                 
 % Example parameters to compare with webapp results (United States)   
 % Phase
-NumDays = daysact('1-jan-2020',  '1-sep-2020');
+NumDays = daysact('1-jan-2020',  '1-jan-2020');
 month2day = @(x) x*30+15;
-cp = cos(2*pi*((NumDays/365)-(month2day(0)/365)));
+cp = (2*pi*((NumDays/365)-(month2day(0)/365)));
 
 % Age deppendent parameters
 confirmed = ([5, 5, 10, 15, 20, 25, 30, 40, 50]) / 100;
