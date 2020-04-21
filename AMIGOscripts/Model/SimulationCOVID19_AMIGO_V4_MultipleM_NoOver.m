@@ -9,8 +9,23 @@ month2day = @(x) x*30+15; % Function from Neher code to get peak of seasonality 
 maxd = daysact('1-feb-2020', NumDays); % Days of the simulation
 da = 1:maxd; % String of days of the simulation
 cp = cos(2*pi*(((da+difda)/365)-(month2day(peakMonth)/365))); % Cosine function
+% % hp: Sequential
+% % M1 Period = 01-feb-2020:01-03-2020, Intensity =40;
+% % M2 Period = 01-03-2020:01-09-2020, Intensity = 60;
+% M = 40*ones(1,length(cp));
+% M(daysact('1-feb-2020', '01-mar-2020'):end) = 60;
+% M_Ty = 1-M./100; % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
 
-M_Ty = repelem(1-[60]/100, length(cp)); % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
+% % hp: Overlap ---> This does not work yet
+% M1 Period = 01-feb-2020:15-03-2020, Intensity =40;
+% M2 Period = 01-03-2020:01-09-2020, Intensity = 60;
+M = ones(1,length(cp));
+M1 = M; 
+M1(1:daysact('1-feb-2020', '15-mar-2020')) = 0.40;
+M2 = M;
+M2(daysact('1-feb-2020', '1-mar-2020'):end) = 0.60;
+M_Ty = 1-(M1.*M2); % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
+
 M_Tx = 1:length(cp); % Time vector for the input
 T_endx = length(cp); % Maximum number of days. It should be equal to maxd
 

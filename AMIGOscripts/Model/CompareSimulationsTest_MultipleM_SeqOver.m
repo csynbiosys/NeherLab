@@ -1,7 +1,25 @@
+%% Load the equivalent data from the webapp
+cd D:\SynBioSysNeher\NeherLab\.git\AMIGOscripts\Data
+%datanh = tdfread('covid.summary_sequential.tsv');
+datanh = tdfread('covid.summary_overlap.tsv');
+cd D:\SynBioSysNeher\NeherLab\.git\AMIGOscripts\Model
 
+%% Load the results of the simulation
+load('TestSimulationNeherModelAMIGO_V3_NoOver.mat','simCov19')
 
-datanh = tdfread('covid.summary.tsv');
+% Get cumulative results
 
+[a,b] = size(simCov19.sim.states{1});
+
+cumResCov19 = zeros(a,b/9);
+r = 1:11:b;
+for i=1:11 % States    
+    for j=1:9 % Agge groups
+        cumResCov19(:,i) = cumResCov19(:,i) + simCov19.sim.states{1}(:,r(j));
+    end
+    r = r+1;
+end
+%%
 % Susceptible
 susen = datanh.susceptible_0x28total0x29';
 sused = round(cumResCov19(:,1))';

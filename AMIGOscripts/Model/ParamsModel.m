@@ -12,12 +12,12 @@ fatality  = ([30, 30, 30, 30, 30, 40, 40, 50, 50]) / 100;
 fatality = fatality.*critical; % Luci added
 
 % reported=1/30;
-isolated = ([5, 5, 5, 5, 5, 5, 5, 5, 5]) / 100;
+isolated = ([5, 5, 5, 5, 5, 5, 5, 5, 5]) / 100; % Luci mod based on table in webapp: was set to 5 
 
 imports = 0.1;
 ipd = imports/9;
 
-N = 327200000;
+N = 331002651;%327200000; %Mod Luci The previous number did not make sense with age distribution and N0 in parameters
 R0 = 3.2;
 epp = 0.1;
 ofs = 2;
