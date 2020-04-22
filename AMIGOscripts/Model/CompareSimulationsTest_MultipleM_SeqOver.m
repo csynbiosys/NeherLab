@@ -1,7 +1,7 @@
 %% Load the equivalent data from the webapp
 cd D:\SynBioSysNeher\NeherLab\.git\AMIGOscripts\Data
 %datanh = tdfread('covid.summary_sequential.tsv');
-datanh = tdfread('covid.summary_overlap.tsv');
+datanh = tdfread('covid.summaryOverlap.tsv');
 cd D:\SynBioSysNeher\NeherLab\.git\AMIGOscripts\Model
 
 %% Load the results of the simulation

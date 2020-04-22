@@ -29,14 +29,12 @@ cp = cos(2*pi*(((da+difda)/365)-(month2day(peakMonth)/365))); % Cosine function
 % M3 Period = 01-08-2020:01-09-2020, Intensity = 0.6;
  M = ones(1,length(cp));
  M1 = M; 
- M1(1,1:daysact('1-feb-2020', '15-mar-2020')) = 0.40;
+ M1(1:daysact('1-feb-2020', '15-mar-2020')) = 0.40;
  M2 = M;
  ind1 = daysact('1-feb-2020', '1-mar-2020');
- %ind2 = daysact('1-mar-2020', '1-aug-2020');
- M2(1,ind1:end) = 0.60;
- Mp = M1.*M2; 
- Mp(Mp==1)=0;
-M_Ty = 1-Mp; % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
+ ind2 = daysact('1-mar-2020', '1-aug-2020');
+ M2(daysact('1-feb-2020', '1-mar-2020'):end) = 0.60;
+M_Ty = 1-(M1.*M2); % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
 
 M_Tx = 1:length(cp); % Time vector for the input
 T_endx = length(cp); % Maximum number of days. It should be equal to maxd
