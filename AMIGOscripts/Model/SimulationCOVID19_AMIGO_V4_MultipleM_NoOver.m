@@ -18,25 +18,26 @@ cp = cos(2*pi*(((da+difda)/365)-(month2day(peakMonth)/365))); % Cosine function
 
 % % Test with 1 measure
 % % M1 Period = 01-feb-2020:01-03-2020, Intensity =40;
-% M = zeros(1,length(cp));
-% M(1,1:daysact('1-feb-2020', '01-mar-2020')) = 40;
-% M_Ty = 1-M./100;
+M = zeros(1,length(cp));
+%M(1,1:daysact('1-feb-2020', '01-mar-2020')) = 40;
+M(1,1:daysact('1-feb-2020', '01-sep-2020')) = 40;
+M_Ty = 1-M./100;
 % THIS ONE WORKS PERFECTLY
 
 % % hp: Overlap ---> This does not work yet
 % M1 Period = 01-feb-2020:15-03-2020, Intensity =0.4;
 % M2 Period = 01-03-2020:01-08-2020, Intensity = 0.6;
 % M3 Period = 01-08-2020:01-09-2020, Intensity = 0.6;
- M = ones(1,length(cp));
- M1 = M; 
- M1(1,1:daysact('1-feb-2020', '15-mar-2020')) = 0.40;
- M2 = M;
- ind1 = daysact('1-feb-2020', '1-mar-2020');
- %ind2 = daysact('1-mar-2020', '1-aug-2020');
- M2(1,ind1:end) = 0.60;
- Mp = M1.*M2; 
- Mp(Mp==1)=0;
-M_Ty = 1-Mp; % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
+%  M = ones(1,length(cp));
+%  M1 = M; 
+%  M1(1,1:daysact('1-feb-2020', '15-mar-2020')) = 0.40;
+%  M2 = M;
+%  ind1 = daysact('1-feb-2020', '1-mar-2020');
+%  %ind2 = daysact('1-mar-2020', '1-aug-2020');
+%  M2(1,ind1:end) = 0.60;
+%  Mp = M1.*M2; 
+%  Mp(Mp==1)=0;
+%  M_Ty = 1-Mp; % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
 
 M_Tx = 1:length(cp); % Time vector for the input
 T_endx = length(cp); % Maximum number of days. It should be equal to maxd

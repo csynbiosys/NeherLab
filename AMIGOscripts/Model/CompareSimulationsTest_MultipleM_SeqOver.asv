@@ -1,7 +1,7 @@
 %% Load the equivalent data from the webapp
 cd D:\SynBioSysNeher\NeherLab\.git\AMIGOscripts\Data
 %datanh = tdfread('covid.summary_sequential.tsv');
-datanh = tdfread('covid.summaryConstant.tsv');
+datanh = tdfread('covid.summary1Feb1Mar04.tsv');
 cd D:\SynBioSysNeher\NeherLab\.git\AMIGOscripts\Model
 
 %% Load the results of the simulation
@@ -19,11 +19,6 @@ for i=1:11 % States
     end
     r = r+1;
 end
-
-%% Check the initial states are the same
- St_us = [round(cumResCov19(1,1)),round(cumResCov19(1,5)),round(cumResCov19(1,6)),round(cumResCov19(1,7)),round(cumResCov19(1,8)),round(cumResCov19(1,9)),round(cumResCov19(1,10)),round(cumResCov19(1,11))];
- St_Ne = [datanh.susceptible_0x28total0x29(1,1),datanh.infectious_0x28total0x29(1,1),datanh.severe_0x28total0x29(1,1),datanh.ICU_0x28total0x29(1,1),datanh.cumulative_recovered_0x28total0x29(1,1),datanh.cumulative_fatality_0x28total0x29(1,1),datanh.cumulative_hospitalized_0x28total0x29(1,1),datanh.cumulative_critical_0x28total0x29(1,1)];
-
 %%
 % Susceptible
 susen = datanh.susceptible_0x28total0x29';
@@ -34,8 +29,8 @@ plot(simCov19.sim.tsim{1}+1, susen)
 plot(simCov19.sim.tsim{1}+1, sused)
 legend('He', 'me')
 title('Susceptible')
-disp('Max Error on susceptible [%]: ')
-max((susen-sused)./susen*100)
+disp('Error on susceptible [%]: ')
+(susen(end)-sused(end))/susen(end)*100
 
 % Recovered
 susen = datanh.cumulative_recovered_0x28total0x29';
@@ -58,8 +53,8 @@ plot(simCov19.sim.tsim{1}+1, susen)
 plot(simCov19.sim.tsim{1}+1, sused)
 legend('He', 'me')
 title('Infected')
-disp('Max error on infected [%]: ')
-max((susen-sused)./susen*100)
+disp('Error on infected [%]: ')
+(susen(end)-sused(end))/susen(end)*100
 
 
 
