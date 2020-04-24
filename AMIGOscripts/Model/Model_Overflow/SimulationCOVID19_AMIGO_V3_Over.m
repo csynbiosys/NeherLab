@@ -9,36 +9,8 @@ month2day = @(x) x*30+15; % Function from Neher code to get peak of seasonality 
 maxd = daysact('1-feb-2020', NumDays); % Days of the simulation
 da = 1:maxd; % String of days of the simulation
 cp = cos(2*pi*(((da+difda)/365)-(month2day(peakMonth)/365))); % Cosine function
-% % hp: Sequential
-% % M1 Period = 01-feb-2020:01-03-2020, Intensity =40;
-% % M2 Period = 01-03-2020:01-09-2020, Intensity = 60;
-% M = 40*ones(1,length(cp));
-% M(daysact('1-feb-2020', '01-mar-2020'):end) = 60;
-% M_Ty = 1-M./100; % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
 
-% % Test with 1 measure
-% % M1 Period = 01-feb-2020:01-03-2020, Intensity =40;
-M = zeros(1,length(cp));
-%M(1,1:daysact('1-feb-2020', '01-mar-2020')) = 40;
-M(1,1:daysact('1-feb-2020', '01-sep-2020')) = 40;
-M_Ty = 1-M./100;
-% THIS ONE WORKS PERFECTLY
-
-% % hp: Overlap ---> This does not work yet
-% M1 Period = 01-feb-2020:15-03-2020, Intensity =0.4;
-% M2 Period = 01-03-2020:01-08-2020, Intensity = 0.6;
-% M3 Period = 01-08-2020:01-09-2020, Intensity = 0.6;
-%  M = ones(1,length(cp));
-%  M1 = M; 
-%  M1(1,1:daysact('1-feb-2020', '15-mar-2020')) = 0.40;
-%  M2 = M;
-%  ind1 = daysact('1-feb-2020', '1-mar-2020');
-%  %ind2 = daysact('1-mar-2020', '1-aug-2020');
-%  M2(1,ind1:end) = 0.60;
-%  Mp = M1.*M2; 
-%  Mp(Mp==1)=0;
-%  M_Ty = 1-Mp; % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
-
+M_Ty = repelem(1-[40]/100, length(cp)); % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
 M_Tx = 1:length(cp); % Time vector for the input
 T_endx = length(cp); % Maximum number of days. It should be equal to maxd
 
@@ -67,9 +39,9 @@ clear pe_results;
 clear pe_inputs;
 clear inputs;
 
-model = COVID19_NeherModel_V3_NoOver2;
+model = COVID19_NeherModel_V3_Over;
 inputs.model = model;
-inputs.model.par=ParamsModel();
+inputs.model.par=ParamsModel_Over();
 
 inputs.pathd.results_folder = results_folder;                        
 inputs.pathd.short_name     = short_name;
@@ -78,8 +50,8 @@ inputs.pathd.runident       = 'initial_setup';
 %% Experiment
 
 % Definition of initial conditions
-agess = [39721484, 42332393, 46094077, 44668271, 40348398, 42120077, 38488173, 24082598, 13147180]; % age distribution of USA
-pop  = zeros(11, 9);
+agess = [39721484, 42332393, 46094077, 44668271, 40348398, 42120077, 38488173, 24082598, 13147180];
+pop  = zeros(12, 9);
 ages = agess / sum(agess);
 sizes = sum(agess);
 cases = 8;
@@ -127,22 +99,22 @@ inputs.exps.noise_type='hetero_proportional';
 inputs.exps.std_dev{1}=[0.0 0.0];
 
 %% SIMULATION
-% inputs.ivpsol.ivpsolver='cvodes'; % Luci
-% inputs.ivpsol.senssolver='fdsens5'; %Luci
-% inputs.ivpsol.rtol=1.0D-13;
-% inputs.ivpsol.atol=1.0D-13;
+inputs.ivpsol.ivpsolver='cvodes';
+inputs.ivpsol.senssolver='fdsens5';
+%inputs.ivpsol.rtol=1.0D-16;
+%inputs.ivpsol.atol=1.0D-16;
 
-% inputs.plotd.plotlevel='noplot';
+inputs.plotd.plotlevel='noplot';
 
-MInputs = AMIGO_Prep(inputs);
+AMIGO_Prep(inputs);
 
 warning('off','MATLAB:MKDIR:DirectoryExists')
 addpath('AMIGOChanged')
-% 
-% simCov19 = AMIGO_SModel_NoVer(inputs); % Luci
+
+simCov19 = AMIGO_SModel_NoVer(inputs);
 
 
-save('TestSimulationNeherModelAMIGO_V3_NoOver.mat','simCov19')
+save('TestSimulationNeherModelAMIGO_V3_Over.mat','simCov19')
 
 
 
