@@ -10,6 +10,7 @@
 
 [cp, M_Tx, M_Ty, T_endx] = Inputs_SIR([],[],[],[]);
 
+
 %% Directory of AMIGO reults and others
 foldnam = 'TestNeherModelCovid19_Rep3';
 resultFileName = [strcat(foldnam),'.dat'];
@@ -34,7 +35,7 @@ clear pe_results;
 clear pe_inputs;
 clear inputs;
 
-model = COVID19_NeherModel_V3_NoOver2;
+model = COVID19_NeherModel_V3_Over;
 inputs.model = model;
 inputs.model.par=Params_SIR([],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[5,5,5,5,5,5,5,5,5]);
 
@@ -44,7 +45,7 @@ inputs.pathd.runident       = 'initial_setup';
 
 %% Experiment
 
-y0 = ComputeY0_COVID19_NpOver();
+y0 = ComputeY0_COVID19_Over();
 
 % Time definition
 duration = T_endx;               % Duration in of the experiment (days)
@@ -82,8 +83,9 @@ inputs.exps.std_dev{1}=[0.0 0.0];
 %% SIMULATION
 inputs.ivpsol.ivpsolver='cvodes';
 inputs.ivpsol.senssolver='fdsens5';
-% inputs.ivpsol.rtol=1.0D-16;
-% inputs.ivpsol.atol=1.0D-16;
+inputs.model.positiveStates=1;
+inputs.ivpsol.rtol=1.0D-11;
+inputs.ivpsol.atol=1.0D-11;
 
 inputs.plotd.plotlevel='noplot';
 
@@ -95,7 +97,7 @@ addpath('AMIGOChanged')
 simCov19 = AMIGO_SModel_NoVer(inputs);
 
 
-save('TestSimulationNeherModelAMIGO_V3_NoOver.mat','simCov19')
+save('TestSimulationNeherModelAMIGO_V3_Over.mat','simCov19')
 
 
 

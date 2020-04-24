@@ -1,5 +1,5 @@
 
-function [par] = ParamsModel()
+function [par] = ParamsModel_Over()
 % Example parameters to compare with webapp results (United States)   
 
 % Age deppendent parameters
@@ -7,9 +7,9 @@ confirmed = ([5, 5, 10, 15, 20, 25, 30, 40, 50]) / 100;
 severe    = ([1, 3, 3, 3, 6, 10, 25, 35, 50]) / 100;
 severe    =  severe.*confirmed;
 critical  = ([5, 10, 10, 15, 20, 25, 35, 45, 55]) / 100;
-critical = critical.*severe; % Luci added
+% critical = critical.*severe; % Luci added
 fatality  = ([30, 30, 30, 30, 30, 40, 40, 50, 50]) / 100;
-fatality = fatality.*critical; % Luci added
+% fatality = fatality.*critical; % Luci added
 
 % reported=1/30;
 isolated = ([5, 5, 5, 5, 5, 5, 5, 5, 5]) / 100;
@@ -17,7 +17,7 @@ isolated = ([5, 5, 5, 5, 5, 5, 5, 5, 5]) / 100;
 imports = 0.1;
 ipd = imports/9;
 
-N = 327200000;
+N = 331002651;
 R0 = 3.2;
 epp = 0.1;
 ofs = 2;
@@ -26,7 +26,10 @@ t_l = 3;
 t_c = 14;
 t_h = 3;
 
-par=[N,R0,epp,ipd,ofs,t_i,t_l,t_c,t_h,...
+HB = 798288;
+ICUb = 49499;
+
+par=[N,R0,epp,ipd,ofs,HB,ICUb,t_i,t_l,t_c,t_h,...
       1-isolated(1),1-severe(1),critical(1),fatality(1),...
       1-isolated(2),1-severe(2),critical(2),fatality(2),...
       1-isolated(3),1-severe(3),critical(3),fatality(3),...
