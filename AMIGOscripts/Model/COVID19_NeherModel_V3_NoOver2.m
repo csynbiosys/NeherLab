@@ -1,7 +1,7 @@
 function [model] = COVID19_NeherModel_V3_NoOver2()
 
 % model.AMIGOjac = 1;                                                         % Compute Jacobian 0 = No, 1 = yes
-model.input_model_type='charmodelC';                                        % Model introduction: 'charmodelC'|'c_model'|'charmodelM'|'matlabmodel'|'sbmlmodel'|'blackboxmodel'|'blackboxcost                             
+model.input_model_type='charmodelM';                                        % Model introduction: 'charmodelC'|'c_model'|'charmodelM'|'matlabmodel'|'sbmlmodel'|'blackboxmodel'|'blackboxcost                             
 
 model.n_st=11*9;                                                               % Number of states      
 model.n_par=47;                                                             % Number of model parameters 

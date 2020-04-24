@@ -15,7 +15,7 @@ foldnam = 'TestNeherModelCovid19_Rep3';
 resultFileName = [strcat(foldnam),'.dat'];
 rng shuffle;
 rngToGetSeed = rng;
-% Write the header information of the .dat file . 
+% Write the header information of the .dat file .
 fid = fopen(resultFileName,'w');
 fprintf(fid,'HEADER DATE %s\n',datestr(datetime()));
 fprintf(fid,'HEADER RANDSEED %d\n',rngToGetSeed.Seed);
@@ -38,7 +38,7 @@ model = COVID19_NeherModel_V3_NoOver2;
 inputs.model = model;
 inputs.model.par=Params_SIR([],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[5,5,5,5,5,5,5,5,5]);
 
-inputs.pathd.results_folder = results_folder;                        
+inputs.pathd.results_folder = results_folder;
 inputs.pathd.short_name     = short_name;
 inputs.pathd.runident       = 'initial_setup';
 
@@ -51,13 +51,13 @@ duration = T_endx;               % Duration in of the experiment (days)
 
 % Experiment
 clear newExps;
-newExps.n_exp = 1;                                         % Number of experiments 
-newExps.n_obs{1}=7;                                        % Number of observables per experiment        
+newExps.n_exp = 1;                                         % Number of experiments
+newExps.n_obs{1}=7;                                        % Number of observables per experiment
 newExps.obs_names{1} = char('Infected0','Hospitalised0', 'Critical0', 'Recovered0', 'Dead0', 'CumulativeHospital', 'CumulativeCritical');
-                        
-newExps.obs{1} = char('Infected0 = Inf_0','Hospitalised0 = Sev_0','Critical0 = Cri_0','Recovered0 = Rec_0','Dead0 = Fat_0', 'CumulativeHospital = CumHos_0', 'CumulativeCritical = CumCri_0');% Name of the observables 
 
-newExps.exp_y0{1}=y0;                                      % Initial condition for the experiment    
+newExps.obs{1} = char('Infected0 = Inf_0','Hospitalised0 = Sev_0','Critical0 = Cri_0','Recovered0 = Rec_0','Dead0 = Fat_0', 'CumulativeHospital = CumHos_0', 'CumulativeCritical = CumCri_0');% Name of the observables
+
+newExps.exp_y0{1}=y0;                                      % Initial condition for the experiment
 
 newExps.t_f{1}=duration;                                   % Experiment duration
 newExps.n_s{1}=duration;                             % Number of sampling times
@@ -96,33 +96,3 @@ simCov19 = AMIGO_SModel_NoVer(inputs);
 
 
 save('TestSimulationNeherModelAMIGO_V3_NoOver.mat','simCov19')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
