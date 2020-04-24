@@ -24,12 +24,13 @@ M(1,D_M1+D_M2:end) = 0;
 
 M_Ty = 1-M./100; % Value of M(t) per day, realised that the value used in code is 1 minus the one selected in the app. This still does not consider when there is more than one measure
 
-%% Test with 1 measure
+%% 
+
+% % % Test with 1 measure
 % % % M1 Period = 01-feb-2020:01-03-2020, Intensity =40;
 % M = zeros(1,length(cp));
-% %M(1,1:daysact('1-feb-2020', '01-mar-2020')) = 40; %1 month only
-% M(1,1:daysact('1-feb-2020', '01-sep-2020')) = 40; % constant through the period
-% M_Ty = 1-M./100;
+% %M(1,1:daysact('1-feb-2020', '01-mar-2020')) = 40;
+% M(1,1:daysact('1-feb-2020', '01-sep-2020')) = 40;
 %%
 % % hp: Overlap ---> This does not work yet
 % M1 Period = 01-feb-2020:15-03-2020, Intensity =0.4;
