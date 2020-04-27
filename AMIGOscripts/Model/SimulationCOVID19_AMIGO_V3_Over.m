@@ -45,7 +45,7 @@ inputs.pathd.runident       = 'initial_setup';
 
 %% Experiment
 
-y0 = ComputeY0_COVID19_Over();
+y0 = ComputeY0_COVID19_Over([],[],inputs.model.par);
 
 % Time definition
 duration = T_endx;               % Duration in of the experiment (days)

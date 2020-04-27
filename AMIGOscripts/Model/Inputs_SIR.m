@@ -27,10 +27,12 @@ M_Tx = da; % Time vector for the input
 T_endx = length(da); % Maximum number of days. It should be equal to maxd
 mits = nan(length(mitigations),T_endx);
 for i=1:length(mitigations)
-    dfz = daysact(fds, mitigations{1,i}.tmin);
-    dfe = daysact(mitigations{1,i}.tmax, lds);
-    mits(i,dfz+1:(T_endx-dfe)) = 1-mitigations{1,i}.val/100;
-    mits(mits==0)= 0.01;
+    if ~isempty(mitigations{1,i})
+        dfz = daysact(fds, mitigations{1,i}.tmin);
+        dfe = daysact(mitigations{1,i}.tmax, lds);
+        mits(i,dfz+1:(T_endx-dfe)) = 1-mitigations{1,i}.val/100;
+        mits(mits==0)= 0.01;
+    end
 end
 
 if length(mitigations)>1
