@@ -17,15 +17,15 @@ n = round((agess/sum(agess))*N);
 pop  = zeros(12, 9);
 
 for i = 1:9
-    pop(1, :) = n(i);
+    pop(1, i) = n(i);
     if i==round(9/2)
-        pop(1, :) = pop(1, :) - cases;
-        pop(5, :) = pop(5, :) + cases*0.3;
-        pop(2, :) = pop(2, :) + cases*(0.7/3);
-        pop(3, :) = pop(3, :) + cases*(0.7/3);
-        pop(4, :) = pop(4, :) + cases*(0.7/3);
+        pop(1, i) = pop(1, i) - cases;
+        pop(5, i) = pop(5, i) + cases*0.3;
+        pop(2, i) = pop(2, i) + cases*(0.7/3);
+        pop(3, i) = pop(3, i) + cases*(0.7/3);
+        pop(4, i) = pop(4, i) + cases*(0.7/3);
     end
-    y0 = pop(:)';
+y0 = pop(:)';
 
 end
 
