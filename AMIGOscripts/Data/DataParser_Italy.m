@@ -2,7 +2,7 @@
 %Perform request at GET URL.
 URL_Italy= 'https://raw.github.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni.json',
 
-data = jsondecode(webread(URL_Italy))
+datapp = jsondecode(webread(URL_Italy))
 
 dates = {data.data};
 dates_unique = unique(dates);
@@ -50,7 +50,7 @@ end
 Header = {'Date','Time','H_with_symptoms','C','Total_H_C','Home_confinement','Total_positive_H_C_Home','Delta_Total_positive','Daily_new_positive','R_from_H','D_cum','Total_cases','Tests'};
 T = table(Dates_only',Time',H_with_symptoms,C,Total_H_C,Home_confinement,Total_positive_H_C_Home,Delta_total_positive,Daily_new_positive,R_from_H,D,Total_cases,Tests,'VariableNames',Header')
 
-writetable(T,'Italy_NationalData_20200415.csv')
+writetable(T,'Italy_NationalData_20200426.csv')
 
 
 
