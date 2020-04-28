@@ -27,6 +27,7 @@ startTime = datenum(now);
 results_folder = strcat('TestNeherModelCovid19_V3',datestr(now,'yyyy-mm-dd-HHMMSS'));
 short_name     = strcat('TNMCov19',int2str(1));
 
+
 %% Definition of AMIGO variables for inputs file
 clear model;
 clear exps;
