@@ -129,7 +129,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
 
 
     %% Parameters to fit
-    best_global_theta = global_theta_guess; 
+    best_global_theta = global_theta_guess; % Need to add modifications in this vector (here or from outside) so it takes the necessary default values
     param_including_vector = [false,false,false,false,false,false,false,false,false,false,...
                                 false,false,false,false,false,false,false,false,false,false,...
                                 false,false,false,false,false,false,false,false,false,false,...
@@ -145,6 +145,25 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     inputs.PEsol.global_theta_guess=transpose(best_global_theta(param_including_vector));
     inputs.PEsol.global_theta_max=global_theta_max(param_including_vector);  % Maximum allowed values for the parameters
     inputs.PEsol.global_theta_min=global_theta_min(param_including_vector);  % Minimum allowed values for the parameters
+    
+    % % GLOBAL INITIAL CONDITIONS
+%      inputs.PEsol.id_global_theta_y0='x1';               % [] 'all'|User selected| 'none' (default)
+%      inputs.PEsol.global_theta_y0_max=[110];                % Maximum allowed values for the initial conditions
+%      inputs.PEsol.global_theta_y0_min=[90];                % Minimum allowed values for the initial conditions
+%      %inputs.PEsol.global_theta_y0_guess=[];              % [] Initial guess
+    % 
+    % % LOCAL UNKNOWNS (DIFFERENT VALUES FOR DIFFERENT EXPERIMENTS)
+    % 
+    % inputs.PEsol.id_local_theta{1}='none';                % [] 'all'|User selected| 'none' (default)
+    % % inputs.PEsol.local_theta_max{iexp}=[];              % Maximum allowed values for the paramters
+    % % inputs.PEsol.local_theta_min{iexp}=[];              % Minimum allowed values for the parameters
+    % % inputs.PEsol.local_theta_guess{iexp}=[];            % [] Initial guess
+    % inputs.PEsol.id_local_theta_y0{1}='none';             % [] 'all'|User selected| 'none' (default)
+    % % inputs.PEsol.local_theta_y0_max{iexp}=[];           % Maximum allowed values for the initial conditions
+    % % inputs.PEsol.local_theta_y0_min{iexp}=[];           % Minimum allowed values for the initial conditions
+    % % inputs.PEsol.local_theta_y0_guess{iexp}=[];         % [] Initial guess
+ 
+
 
     % COST FUNCTION RELATED DATA (Check if we are gonna use this or something else)
     inputs.PEsol.PEcost_type='lsq';                       % 'lsq' (weighted least squares default) | 'llk' (log likelihood) | 'user_PEcost'
