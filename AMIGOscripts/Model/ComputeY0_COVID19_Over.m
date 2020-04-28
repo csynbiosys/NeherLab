@@ -24,7 +24,8 @@ pop(2, :) = pop(2, :) + cases*ages*0.7/3;
 pop(3, :) = pop(3, :) + cases*ages*0.7/3;
 pop(4, :) = pop(4, :) + cases*ages*0.7/3;
 
-y0 = pop(:)';
+y0 = [pop(:)',sum(pop(1, :)),(sum(pop(2, :))+sum(pop(3, :))+sum(pop(4, :))), sum(pop(5, :)), sum(pop(6, :)),...
+    sum(pop(7, :)),sum(pop(8, :)),sum(pop(9, :)),sum(pop(10, :)),sum(pop(11, :)),sum(pop(12, :))];
 
 end
 

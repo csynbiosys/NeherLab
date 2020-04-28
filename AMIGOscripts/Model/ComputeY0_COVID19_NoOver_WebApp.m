@@ -25,8 +25,9 @@ for i = 1:9
         pop(3, i) = pop(3, i) + cases*(0.7/3);
         pop(4, i) = pop(4, i) + cases*(0.7/3);
     end
-y0 = [pop(:)',sum(pop(1, :)),sum(pop(2, :)),sum(pop(3, :),sum(pop(4, :)+pop(5, :)+pop(6, :)),...
-    sum(pop(7, :)),sum(pop(8, :)),sum(pop(9, :)),sum(pop(10, :)),sum(pop(11, :)))];
+y0 = [pop(:)',sum(pop(1, :)),(sum(pop(2, :))+sum(pop(3, :))+sum(pop(4, :))), sum(pop(5, :)), sum(pop(6, :)),...
+    sum(pop(7, :)),sum(pop(8, :)),sum(pop(9, :)),sum(pop(10, :)),sum(pop(11, :))];
+
 end
 
 
