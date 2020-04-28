@@ -146,12 +146,20 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     inputs.PEsol.global_theta_max=global_theta_max(param_including_vector);  % Maximum allowed values for the parameters
     inputs.PEsol.global_theta_min=global_theta_min(param_including_vector);  % Minimum allowed values for the parameters
     
-    % % GLOBAL INITIAL CONDITIONS
-%      inputs.PEsol.id_global_theta_y0='x1';               % [] 'all'|User selected| 'none' (default)
-%      inputs.PEsol.global_theta_y0_max=[110];                % Maximum allowed values for the initial conditions
-%      inputs.PEsol.global_theta_y0_min=[90];                % Minimum allowed values for the initial conditions
-%      %inputs.PEsol.global_theta_y0_guess=[];              % [] Initial guess
-    % 
+    % % GLOBAL INITIAL CONDITIONS (Change this is multi-data fit will be done)
+     inputs.PEsol.id_global_theta_y0=char('Sus_0','Exp1_0','Exp2_0','Exp3_0','Inf_0','Sev_0','Cri_0','Ovf_0','Rec_0','Fat_0','CumHos_0','CumCri_0', ...
+                    'Sus_1','Exp1_1','Exp2_1','Exp3_1','Inf_1','Sev_1','Cri_1','Ovf_1','Rec_1','Fat_1','CumHos_1','CumCri_1', ...
+                    'Sus_2','Exp1_2','Exp2_2','Exp3_2','Inf_2','Sev_2','Cri_2','Ovf_2','Rec_2','Fat_2','CumHos_2','CumCri_2', ...
+                    'Sus_3','Exp1_3','Exp2_3','Exp3_3','Inf_3','Sev_3','Cri_3','Ovf_3','Rec_3','Fat_3','CumHos_3','CumCri_3', ...
+                    'Sus_4','Exp1_4','Exp2_4','Exp3_4','Inf_4','Sev_4','Cri_4','Ovf_4','Rec_4','Fat_4','CumHos_4','CumCri_4', ...
+                    'Sus_5','Exp1_5','Exp2_5','Exp3_5','Inf_5','Sev_5','Cri_5','Ovf_5','Rec_5','Fat_5','CumHos_5','CumCri_5', ...
+                    'Sus_6','Exp1_6','Exp2_6','Exp3_6','Inf_6','Sev_6','Cri_6','Ovf_6','Rec_6','Fat_6','CumHos_6','CumCri_6', ...
+                    'Sus_7','Exp1_7','Exp2_7','Exp3_7','Inf_7','Sev_7','Cri_7','Ovf_7','Rec_7','Fat_7','CumHos_7','CumCri_7', ...
+                    'Sus_8','Exp1_8','Exp2_8','Exp3_8','Inf_8','Sev_8','Cri_8','Ovf_8','Rec_8','Fat_8','CumHos_8','CumCri_8');             % [] 'all'|User selected| 'none' (default)
+     inputs.PEsol.global_theta_y0_max=repelem(1000, 108);                % Maximum allowed values for the initial conditions
+     inputs.PEsol.global_theta_y0_min=repelem(0, 108);                % Minimum allowed values for the initial conditions
+     inputs.PEsol.global_theta_y0_guess=y0;              % [] Initial guess
+    
     % % LOCAL UNKNOWNS (DIFFERENT VALUES FOR DIFFERENT EXPERIMENTS)
     % 
     % inputs.PEsol.id_local_theta{1}='none';                % [] 'all'|User selected| 'none' (default)
