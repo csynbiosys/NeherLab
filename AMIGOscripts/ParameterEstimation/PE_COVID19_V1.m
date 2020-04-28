@@ -1,8 +1,8 @@
 %% Inputs
-%    -- epccOutputResultFileNameBase: Tag for the files generated
-%    -- epcc_exps: Index of the parameter vector initial guess
-%    -- global_theta_guess: Initial guess for the theta vector
-%    -- expdata: Path for the matlab structure with the experimental data
+%    -- epccOutputResultFileNameBase: Tag for the files generated (String)
+%    -- epcc_exps: Index of the parameter vector initial guess (Integer)
+%    -- global_theta_guess: Initial guess for the theta vector (Vector of floats)
+%    -- expdata: Path for the matlab structure with the experimental data (String, only the name of the file)
 
 
 function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata)
@@ -28,8 +28,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     results_folder = strcat('NeherModelCovid19_PE',datestr(now,'yyyy-mm-dd-HHMMSS'));
     short_name     = strcat('TNMCov19',int2str(epcc_exps));
     
-    addpath('../Model')
-    addpath('.')
+    
     
     %% Clear variables nedded by AMIGO
     
@@ -41,7 +40,11 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     clear pe_inputs;
 
     %% Load data to be fitted
-    Dat = load(expdata);
+    if contains(expdata, '\') || contains(expdata, '/')
+        Dat = load(expdata);
+    else
+        Dat = load(['../Data/',expdata,'.mat']);
+    end
     
     %% Load Model
     model = COVID19_NeherModel_V3_Over;
@@ -52,16 +55,11 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     inputs.pathd.short_name     = short_name;
     inputs.pathd.runident       = 'initial_setup';
 
-    %% Compute Y0 (might not be required if we fit it)
+    %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
+            %%%%%%%%%%%%%%%%%%% INITIAL GUESS?????
     y0 = ComputeY0_COVID19_Over_WebApp([],[],inputs.model.par(1));
     
-    %% Compute inputs for the model (this might need modifications deppending on what we wanna do or on how we handle the different parameters of the functions deppending on the data we have)
-    % Example on how to define the mitigation measure structure
-    mitigations = cell(1,2);
-    mitigations{1,1}.val = 40; mitigations{1,1}.tmin = '1-feb-2020'; mitigations{1,1}.tmax = '1-sep-2020';
-    % mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = '1-may-2020';
-
-    [cp, M_Tx, M_Ty, T_endx] = Inputs_SIR([],[],[],mitigations);
+    
     
     %% Define boundaries for the parameters (Need to discuss boundaries for the different parameters)
     global_theta_min = [0,0,0,0,0,0,0,0,0,0,...
@@ -69,7 +67,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
                         0,0,0,0,0,0,0,0,0,0,...
                         0,0,0,0,0,0,0,0,0,0,...
                         0,0,0,0,0,0,0];
-    global_theta_max = [10,10,10,10,10,10,10,10,10,10,...
+    global_theta_max = [10,10,5,10,10,10,10,10,10,10,...
                         10,10,10,10,10,10,10,10,10,10,...
                         10,10,10,10,10,10,10,10,10,10,...
                         10,10,10,10,10,10,10,10,10,10,...
@@ -92,45 +90,54 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%       
                         %%%%%%%%%%%%%%%%%%%%%%       
 
-%     exps.n_exp = length(exps_indexTraining);            % Number of experiments to be used in the multi-experiments fit
+    exps.n_exp = length(Dat.Data.exp_data);            % Number of experiments to be used in the multi-experiments fit
 
-%     for iexp=1:length(exps_indexTraining)
+    for iexp=1:length(Dat.Data.exp_data)
+        
+        %% Compute inputs for the model (this might need modifications deppending on what we wanna do or on how we handle the different parameters of the functions deppending on the data we have)
+        % Example on how to define the mitigation measure structure
+        mitigations = cell(1,2);
+        mitigations{1,1}.val = 0; mitigations{1,1}.tmin = Dat.Data.start_date{iexp}; mitigations{1,1}.tmax = Dat.Data.end_date{iexp};
+        mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = Dat.Data.end_date{iexp};
+
+        [cp, M_Tx, M_Ty, T_endx] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
+        
 %         exp_indexData = exps_indexTraining(iexp);
-        exps.exp_type{iexp} = 'fixed'; 
+        exps.exp_type{iexp} = Dat.Data.exp_type{1}; 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEED TO CHECK WITH THE DATA
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AVAILABLE OR MAIBE AUTOMATED
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FROM THE DATA STRUCTURE
-        exps.n_obs{1}=7;                                        % Number of observables per experiment        
-        exps.obs_names{1} = char('Infected','Hospitalised', 'Critical', 'Recovered', 'Dead', 'CumulativeHospital', 'CumulativeCritical');
-        exps.obs{1} = char('Infected = Inf','Hospitalised = Sev','Critical = Cri','Recovered = Rec','Dead = Fat', 'CumulativeHospital = CumHos', 'CumulativeCritical = CumCri');% Name of the observables 
+        exps.n_obs{iexp}=Dat.Data.n_obs{iexp};                                        % Number of observables per experiment        
+        exps.obs_names{iexp} = Dat.Data.obs_names{iexp};
+        exps.obs{iexp} = char('CumInfected = Inf','CumHospitalised = Sev','CumCritical = Cri','CumRecovered = Rec','CumDead = Fat');% Name of the observables 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
-%         exps.u_interp{iexp} = Data.u_interp{1,exp_indexData};
-%         exps.t_f{iexp} = Data.t_con{1,exp_indexData}(end); 
-%         exps.n_s{iexp} = Data.n_s{1,exp_indexData};
-%         exps.t_s{iexp} = Data.t_s{1,exp_indexData}; 
-%         exps.t_con{iexp} = Data.t_con{1,exp_indexData};
-% 
-%         if exp_indexData>3 && exp_indexData<7 % Pulses, requires to specify maximum and minimum value for the input
-%             exps.n_pulses{iexp} = Data.n_pulses{1,exp_indexData};
-%             exps.u_min{iexp} = Data.u_min{1,exp_indexData};
-%             exps.u_max{iexp} = Data.u_max{1,exp_indexData};
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Considers that we have the same number of points for each observable
+        exps.u_interp{iexp} = 'step';
+        exps.u{iexp} = [M_Ty;cp];
+        exps.t_con{iexp} = M_Tx;
+        
+        exps.t_f{iexp} = Dat.Data.t_f{iexp}(1); 
+        exps.n_s{iexp} = Dat.Data.n_s{iexp}(1);
+        exps.t_s{iexp} = Dat.Data.t_s{iexp}(1,:);
+        
+%         if isempty(Dat.Data.t_con{1})
+%             exps.t_con{iexp} = [Dat.Data.t_s{iexp}(1,1),Dat.Data.t_s{iexp}(1,end)]; %%%%%%%%%%%%%%%%%%%%% Check if this is needed
 %         else
-%             exps.n_steps{iexp} = length(exps.t_con{iexp})-1;
-%             exps.u{iexp} = Data.u{1,exp_indexData};
+%             exps.t_con{iexp} = Dat.Data.t_con{iexp};
 %         end
 
-        exps.data_type = 'real'; 
-        exps.noise_type = 'hetero';
-%         exps.exp_data{iexp} = Data.exp_data{1,exp_indexData};
-%         exps.error_data{iexp} = Data.error_data{1,exp_indexData};
+        exps.data_type = Dat.Data.data_type{iexp}; 
+        exps.noise_type = Dat.Data.noise_type{iexp};
+        exps.exp_data{iexp} = Dat.Data.exp_data{iexp}';
+        exps.error_data{iexp} = Dat.Data.error_data{iexp}';
         exps.exp_y0{iexp} = y0;
-%     end
+    end
 
 
     %% Parameters to fit
     best_global_theta = global_theta_guess; % Need to add modifications in this vector (here or from outside) so it takes the necessary default values
-    param_including_vector = [false,false,false,false,false,false,false,false,false,false,...
+    param_including_vector = [false,true,true,false,false,false,false,false,false,false,...
                                 false,false,false,false,false,false,false,false,false,false,...
                                 false,false,false,false,false,false,false,false,false,false,...
                                 false,false,false,false,false,false,false,false,false,false,...
@@ -156,7 +163,9 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
                     'Sus_6','Exp1_6','Exp2_6','Exp3_6','Inf_6','Sev_6','Cri_6','Ovf_6','Rec_6','Fat_6','CumHos_6','CumCri_6', ...
                     'Sus_7','Exp1_7','Exp2_7','Exp3_7','Inf_7','Sev_7','Cri_7','Ovf_7','Rec_7','Fat_7','CumHos_7','CumCri_7', ...
                     'Sus_8','Exp1_8','Exp2_8','Exp3_8','Inf_8','Sev_8','Cri_8','Ovf_8','Rec_8','Fat_8','CumHos_8','CumCri_8');             % [] 'all'|User selected| 'none' (default)
-     inputs.PEsol.global_theta_y0_max=repelem(1000, 108);                % Maximum allowed values for the initial conditions
+     
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Need to check bounds to see which make more sense            
+    inputs.PEsol.global_theta_y0_max=repelem(1000, 108);                % Maximum allowed values for the initial conditions
      inputs.PEsol.global_theta_y0_min=repelem(0, 108);                % Minimum allowed values for the initial conditions
      inputs.PEsol.global_theta_y0_guess=y0;              % [] Initial guess
     
@@ -218,8 +227,9 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     % Time in seconds
     fprintf(fid,'PE_TIME %.1f\n', (pe_end-pe_start)*24*60*60);
     fclose(fid);
-  
-    save([strcat(epccOutputResultFileNameBase,'.mat')],'pe_results','exps','pe_inputs','best_global_theta');
+    
+    mkdir(['PE_Results_', expdata,'_',date ])
+    save([strcat('PE_Results_', expdata,'_',date, '/', epccOutputResultFileNameBase,'.mat')],'pe_results','exps','pe_inputs','best_global_theta');
     
     
     %% Simulation of validation set????
