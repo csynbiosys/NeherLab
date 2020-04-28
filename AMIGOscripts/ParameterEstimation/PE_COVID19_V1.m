@@ -77,20 +77,131 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
 
     global_theta_guess = global_theta_guess';
 
+    %% Training and validation set definition (Are we gonna do this???)
+%     % Define a randomised vector with the indexes of the experiments
+%     exps_indexall = [6,3,11,7,8,5,1,2,4,9,10,12];
+% 
+%     % Split the pseudo-data in training and test set
+%     exps_indexTraining = exps_indexall(1:length(exps_indexall)/3*2);
+%     exps_indexTest =  exps_indexall(length(exps_indexall)/3*2+1:end);
+
+    %% Specifications for Parameter Estimation (Commented parts need to be modified once I know the structure of the data and if we use validation or not)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%       
+                        %%%%%%%%%%%%%%%%%%%%%%       
+
+%     exps.n_exp = length(exps_indexTraining);            % Number of experiments to be used in the multi-experiments fit
+
+%     for iexp=1:length(exps_indexTraining)
+%         exp_indexData = exps_indexTraining(iexp);
+        exps.exp_type{iexp} = 'fixed'; 
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEED TO CHECK WITH THE DATA
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AVAILABLE OR MAIBE AUTOMATED
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FROM THE DATA STRUCTURE
+        exps.n_obs{1}=7;                                        % Number of observables per experiment        
+        exps.obs_names{1} = char('Infected','Hospitalised', 'Critical', 'Recovered', 'Dead', 'CumulativeHospital', 'CumulativeCritical');
+        exps.obs{1} = char('Infected = Inf','Hospitalised = Sev','Critical = Cri','Recovered = Rec','Dead = Fat', 'CumulativeHospital = CumHos', 'CumulativeCritical = CumCri');% Name of the observables 
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+%         exps.u_interp{iexp} = Data.u_interp{1,exp_indexData};
+%         exps.t_f{iexp} = Data.t_con{1,exp_indexData}(end); 
+%         exps.n_s{iexp} = Data.n_s{1,exp_indexData};
+%         exps.t_s{iexp} = Data.t_s{1,exp_indexData}; 
+%         exps.t_con{iexp} = Data.t_con{1,exp_indexData};
+% 
+%         if exp_indexData>3 && exp_indexData<7 % Pulses, requires to specify maximum and minimum value for the input
+%             exps.n_pulses{iexp} = Data.n_pulses{1,exp_indexData};
+%             exps.u_min{iexp} = Data.u_min{1,exp_indexData};
+%             exps.u_max{iexp} = Data.u_max{1,exp_indexData};
+%         else
+%             exps.n_steps{iexp} = length(exps.t_con{iexp})-1;
+%             exps.u{iexp} = Data.u{1,exp_indexData};
+%         end
+
+        exps.data_type = 'real'; 
+        exps.noise_type = 'hetero';
+%         exps.exp_data{iexp} = Data.exp_data{1,exp_indexData};
+%         exps.error_data{iexp} = Data.error_data{1,exp_indexData};
+        exps.exp_y0{iexp} = y0;
+%     end
 
 
+    %% Parameters to fit
+    best_global_theta = global_theta_guess; 
+    param_including_vector = [false,false,false,false,false,false,false,false,false,false,...
+                                false,false,false,false,false,false,false,false,false,false,...
+                                false,false,false,false,false,false,false,false,false,false,...
+                                false,false,false,false,false,false,false,false,false,false,...
+                                false,false,false,false,false,false,false];
 
 
+    %% Define inputs structure for AMIGO
+    inputs.exps  = exps;
 
+    % GLOBAL UNKNOWNS (SAME VALUE FOR ALL EXPERMENTS)
+    inputs.PEsol.id_global_theta=model.par_names(param_including_vector,:);
+    inputs.PEsol.global_theta_guess=transpose(best_global_theta(param_including_vector));
+    inputs.PEsol.global_theta_max=global_theta_max(param_including_vector);  % Maximum allowed values for the parameters
+    inputs.PEsol.global_theta_min=global_theta_min(param_including_vector);  % Minimum allowed values for the parameters
 
+    % COST FUNCTION RELATED DATA (Check if we are gonna use this or something else)
+    inputs.PEsol.PEcost_type='lsq';                       % 'lsq' (weighted least squares default) | 'llk' (log likelihood) | 'user_PEcost'
+    inputs.PEsol.lsq_type='Q_expmax';
 
+    % SIMULATION
+    inputs.ivpsol.ivpsolver='cvodes';
+    inputs.ivpsol.senssolver='fdsens5';
+    inputs.model.positiveStates=1;
+    inputs.ivpsol.rtol=1.0D-11;
+    inputs.ivpsol.atol=1.0D-11;
 
+    
+    % OPTIMIZATION (Check if we are gonna use this or something else)
+    inputs.nlpsol.nlpsolver='eSS';
+    inputs.nlpsol.eSS.maxeval = 200000;
+    inputs.nlpsol.eSS.maxtime = 5000;
+%     inputs.nlpsol.eSS.log_var = [1 2 3 4 5 6 7 8]; % Modify this according to the parameters we want to fit
+    inputs.nlpsol.eSS.local.solver = 'lsqnonlin'; 
+    inputs.nlpsol.eSS.local.finish = 'lsqnonlin';
+    inputs.rid.conf_ntrials=500;
+    inputs.plotd.plotlevel='noplot';
 
-
-
-
-
-
+    %% Run
+    AMIGO_Prep(inputs);
+    
+    pe_start = now;
+    pe_inputs = inputs;
+    results = AMIGO_PE(inputs);
+    pe_results = results;
+    pe_end = now;
+    
+    % Save the best theta
+    best_global_theta(param_including_vector) = results.fit.thetabest;
+    
+    % Write results to the output file
+    fid = fopen(resultFileName,'a');
+    used_par_names = model.par_names(param_including_vector,:);
+    
+    for j=1:size(used_par_names,1)
+        fprintf(fid,'PARAM_FIT %s %f\n', used_par_names(j,:), results.fit.thetabest(j));
+    end
+ 
+    % Time in seconds
+    fprintf(fid,'PE_TIME %.1f\n', (pe_end-pe_start)*24*60*60);
+    fclose(fid);
+  
+    save([strcat(epccOutputResultFileNameBase,'.mat')],'pe_results','exps','pe_inputs','best_global_theta');
+    
+    
+    %% Simulation of validation set????
+    
+    
+    
+    
+    
+    
 
 end
 
