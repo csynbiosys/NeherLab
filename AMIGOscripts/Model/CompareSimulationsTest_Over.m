@@ -88,7 +88,7 @@ hold on
 plot(simCov19.sim.tsim{1}+1, susen)
 plot(simCov19.sim.tsim{1}+1, sused)
 legend('He', 'me')
-title('Critical')
+title('Death')
 set(gca, 'YScale', 'log')
 
 % Cumulative Hospital 

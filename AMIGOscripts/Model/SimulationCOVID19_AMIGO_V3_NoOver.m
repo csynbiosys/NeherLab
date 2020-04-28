@@ -5,7 +5,7 @@
 
 % Example on how to define the mitigation measure structure
 mitigations = cell(1,2);
-mitigations{1,1}.val = 60; mitigations{1,1}.tmin = '1-feb-2020'; mitigations{1,1}.tmax = '1-sep-2020';
+mitigations{1,1}.val = 40; mitigations{1,1}.tmin = '1-feb-2020'; mitigations{1,1}.tmax = '1-sep-2020';
 % mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = '1-may-2020';
 
 [cp, M_Tx, M_Ty, T_endx] = Inputs_SIR([],[],[],mitigations);
@@ -82,8 +82,8 @@ inputs.exps.std_dev{1}=[0.0 0.0];
 %% SIMULATION
 inputs.ivpsol.ivpsolver='cvodes';
 inputs.ivpsol.senssolver='fdsens5';
-% inputs.ivpsol.rtol=1.0D-16;
-% inputs.ivpsol.atol=1.0D-16;
+inputs.ivpsol.rtol=1.0D-11;
+inputs.ivpsol.atol=1.0D-11;
 
 inputs.plotd.plotlevel='noplot';
 
