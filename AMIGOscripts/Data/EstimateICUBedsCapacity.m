@@ -17,7 +17,7 @@ clc,clear all,close all;
 AcuteCareBeds_WHO_2015 = [274.57, 238.54, 227.79];
 
 % expressed over 10^5 population
-% _2015 taken from:  add name of the file
+% _2015 taken from:  HFA_478_EN_171019.xlsx (downloaded from WHO on 29/04/2020)
 %   Italy - last updated 2013
 %   Spain - last updated 2014
 %   UK - last updated 2014
