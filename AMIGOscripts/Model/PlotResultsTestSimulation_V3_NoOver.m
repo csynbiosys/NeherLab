@@ -6,7 +6,7 @@ load('TestSimulationNeherModelAMIGO_V3_NoOver.mat','simCov19')
 
 [a,b] = size(simCov19.sim.states{1});
 
-cumResCov19 = zeros(a,b/9);
+cumResCov19 = zeros(a,(b-11)/9);
 r = 1:11:b;
 for i=1:11 % States    
     for j=1:9 % Agge groups

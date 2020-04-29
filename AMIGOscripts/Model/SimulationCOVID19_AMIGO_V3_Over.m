@@ -4,11 +4,11 @@
 %% Input (time varying parameter)
 
 % Example on how to define the mitigation measure structure
-% mitigations = cell(1,2);
-% mitigations{1,1}.val = 40; mitigations{1,1}.tmin = '1-feb-2020'; mitigations{1,1}.tmax = '1-sep-2020';
+mitigations = cell(1,2);
+mitigations{1,1}.val = 40; mitigations{1,1}.tmin = '1-feb-2020'; mitigations{1,1}.tmax = '1-sep-2020';
 % mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = '1-may-2020';
 
-[cp, M_Tx, M_Ty, T_endx] = Inputs_SIR([],[],[],[]);
+[cp, M_Tx, M_Ty, T_endx] = Inputs_SIR([],[],[],mitigations);
 
 
 %% Directory of AMIGO reults and others
@@ -26,6 +26,7 @@ startTime = datenum(now);
 
 results_folder = strcat('TestNeherModelCovid19_V3',datestr(now,'yyyy-mm-dd-HHMMSS'));
 short_name     = strcat('TNMCov19',int2str(1));
+
 
 %% Definition of AMIGO variables for inputs file
 clear model;
@@ -45,7 +46,7 @@ inputs.pathd.runident       = 'initial_setup';
 
 %% Experiment
 
-y0 = ComputeY0_COVID19_Over([],[],inputs.model.par);
+y0 = ComputeY0_COVID19_Over_WebApp([],[],inputs.model.par(1));
 
 % Time definition
 duration = T_endx;               % Duration in of the experiment (days)
@@ -84,8 +85,8 @@ inputs.exps.std_dev{1}=[0.0 0.0];
 inputs.ivpsol.ivpsolver='cvodes';
 inputs.ivpsol.senssolver='fdsens5';
 inputs.model.positiveStates=1;
-inputs.ivpsol.rtol=1.0D-11;
-inputs.ivpsol.atol=1.0D-11;
+inputs.ivpsol.rtol=1.0D-8;
+inputs.ivpsol.atol=1.0D-8;
 
 inputs.plotd.plotlevel='noplot';
 
