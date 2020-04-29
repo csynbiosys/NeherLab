@@ -65,7 +65,10 @@ else
 
     if isempty(isolated); isolated = ([0, 0, 0, 0, 0, 0, 0, 0, 0]) / 100; else; isolated = (isolated) / 100; end
 
-
+    if length(confirmed)~=9 || length(severe)~=9 || length(critical)~=9 || length(fatality)~=9 || length(isolated)~=9
+        disp('Please, introduce correct age dependent parameters (9 groups; no more, no less)')
+        return
+    end
     ipd = imports/9;
 
      % Age deppendent parameters

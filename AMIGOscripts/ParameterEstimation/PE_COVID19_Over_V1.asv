@@ -5,7 +5,7 @@
 %    -- expdata: Path for the matlab structure with the experimental data (String, only the name of the file)
 
 
-function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
+function [out] = PE_COVID19_Over_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
     
     %% Section taken from Processes (Lucia), helps me understand if there is
     % any errors or issues
@@ -46,11 +46,17 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
         Dat = load(['../Data/',expdata,'.mat']);
     end
     
+    %% Load ICU Beds data
+    ICUB = readtable('../Data/ICUBedsCapacity.csv');
+    countr = ICUB.Country;
+    beds = ICUB.ICUBeds;
+
+    
     %% Load Model
-    model = COVID19_NeherModel_V3_NoOver2;
+    model = COVID19_NeherModel_V3_Over;
     inputs.model = model;
     inputs.model.par=theta.par; % Default theta vector, need to see how to modify this deppending on what do we wanna do
-
+    
     inputs.pathd.results_folder = results_folder;                        
     inputs.pathd.short_name     = short_name;
     inputs.pathd.runident       = 'initial_setup';
@@ -119,12 +125,26 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
         exps.exp_data{iexp} = Dat.Data.exp_data{iexp}';
         exps.error_data{iexp} = Dat.Data.error_data{iexp}';
         
-        inputs.model.par(1) = sum(AgeDistributions(Dat.Data.country_id{iexp}));    
+        
+        %% Region deppendent parameters
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEDS TO BE MODIFIED IF WE DO MULTIEXPERIMENTAL FIT TO BE INTRODUCED AS AN INPUT 
+        icub = 0;
+        for h=1:length(countr)
+            if strcmp(countr{h}, Dat.Data.country_id{iexp})
+                icub = beds(h);
+            end
+        end    
+    
+    
+        inputs.model.par(1) = sum(AgeDistributions(Dat.Data.country_id{iexp}));
+        inputs.model.par(7) = icub;
+
         global_theta_guess(1) = sum(AgeDistributions(Dat.Data.country_id{iexp}));
+        global_theta_guess(7) = icub;
         
         %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
             %%%%%%%%%%%%%%%%%%% INITIAL GUESS
-        y0 = ComputeY0_COVID19_NoOver(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})));
+        y0 = ComputeY0_COVID19_Over(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})));
     
         exps.exp_y0{iexp} = y0;
     end
@@ -148,21 +168,21 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Need to check bounds to see which make more sense            
     for i=1:inputs.exps.n_exp
-         inputs.PEsol.id_local_theta_y0{i}=char('Sus_0','Exp1_0','Exp2_0','Exp3_0','Inf_0','Sev_0','Cri_0','Rec_0','Fat_0','CumHos_0','CumCri_0', ...
-                    'Sus_1','Exp1_1','Exp2_1','Exp3_1','Inf_1','Sev_1','Cri_1','Rec_1','Fat_1','CumHos_1','CumCri_1', ...
-                    'Sus_2','Exp1_2','Exp2_2','Exp3_2','Inf_2','Sev_2','Cri_2','Rec_2','Fat_2','CumHos_2','CumCri_2', ...
-                    'Sus_3','Exp1_3','Exp2_3','Exp3_3','Inf_3','Sev_3','Cri_3','Rec_3','Fat_3','CumHos_3','CumCri_3', ...
-                    'Sus_4','Exp1_4','Exp2_4','Exp3_4','Inf_4','Sev_4','Cri_4','Rec_4','Fat_4','CumHos_4','CumCri_4', ...
-                    'Sus_5','Exp1_5','Exp2_5','Exp3_5','Inf_5','Sev_5','Cri_5','Rec_5','Fat_5','CumHos_5','CumCri_5', ...
-                    'Sus_6','Exp1_6','Exp2_6','Exp3_6','Inf_6','Sev_6','Cri_6','Rec_6','Fat_6','CumHos_6','CumCri_6', ...
-                    'Sus_7','Exp1_7','Exp2_7','Exp3_7','Inf_7','Sev_7','Cri_7','Rec_7','Fat_7','CumHos_7','CumCri_7', ...
-                    'Sus_8','Exp1_8','Exp2_8','Exp3_8','Inf_8','Sev_8','Cri_8','Rec_8','Fat_8','CumHos_8','CumCri_8');             % [] 'all'|User selected| 'none' (default)
+         inputs.PEsol.id_local_theta_y0{i}=char('Sus_0','Exp1_0','Exp2_0','Exp3_0','Inf_0','Sev_0','Cri_0','Ovf_0','Rec_0','Fat_0','CumHos_0','CumCri_0', ...
+                    'Sus_1','Exp1_1','Exp2_1','Exp3_1','Inf_1','Sev_1','Cri_1','Ovf_1','Rec_1','Fat_1','CumHos_1','CumCri_1', ...
+                    'Sus_2','Exp1_2','Exp2_2','Exp3_2','Inf_2','Sev_2','Cri_2','Ovf_2','Rec_2','Fat_2','CumHos_2','CumCri_2', ...
+                    'Sus_3','Exp1_3','Exp2_3','Exp3_3','Inf_3','Sev_3','Cri_3','Ovf_3','Rec_3','Fat_3','CumHos_3','CumCri_3', ...
+                    'Sus_4','Exp1_4','Exp2_4','Exp3_4','Inf_4','Sev_4','Cri_4','Ovf_4','Rec_4','Fat_4','CumHos_4','CumCri_4', ...
+                    'Sus_5','Exp1_5','Exp2_5','Exp3_5','Inf_5','Sev_5','Cri_5','Ovf_5','Rec_5','Fat_5','CumHos_5','CumCri_5', ...
+                    'Sus_6','Exp1_6','Exp2_6','Exp3_6','Inf_6','Sev_6','Cri_6','Ovf_6','Rec_6','Fat_6','CumHos_6','CumCri_6', ...
+                    'Sus_7','Exp1_7','Exp2_7','Exp3_7','Inf_7','Sev_7','Cri_7','Ovf_7','Rec_7','Fat_7','CumHos_7','CumCri_7', ...
+                    'Sus_8','Exp1_8','Exp2_8','Exp3_8','Inf_8','Sev_8','Cri_8','Ovf_8','Rec_8','Fat_8','CumHos_8','CumCri_8');             % [] 'all'|User selected| 'none' (default)
      
         
         
         people = AgeDistributions(Dat.Data.country_id{iexp});
         inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
-        r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
+        r = 1:12:length(inputs.PEsol.id_local_theta_y0{i});
         for j=1:length(people)
             inity0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people(j),repelem(sum(Dat.Data.exp_data{1}(:,1)), length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
         end       
@@ -170,7 +190,7 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
             inputs.PEsol.local_theta_y0_max{i}=inity0;                % Maximum allowed values for the initial conditions
         else
             inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
-            r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
+            r = 1:12:length(inputs.PEsol.id_local_theta_y0{i});
             for j=1:length(people)
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODIFY
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% IF
