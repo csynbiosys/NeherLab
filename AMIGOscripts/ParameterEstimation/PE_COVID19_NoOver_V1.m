@@ -120,7 +120,7 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
         
         %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
             %%%%%%%%%%%%%%%%%%% INITIAL GUESS
-        y0 = ComputeY0_COVID19_NoOver(AgeDistributions('Italy'),Dat.Data.exp_data{1}(1,1),sum(AgeDistributions('Italy')));
+        y0 = ComputeY0_COVID19_NoOver(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})));
     
         exps.exp_y0{iexp} = y0;
     end
@@ -156,7 +156,7 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
      
         
         
-        people = AgeDistributions('Italy');
+        people = AgeDistributions(Dat.Data.country_id{iexp});
         inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
         r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
         for j=1:length(people)

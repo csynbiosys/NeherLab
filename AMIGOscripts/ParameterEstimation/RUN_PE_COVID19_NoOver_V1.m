@@ -8,6 +8,7 @@ function [] = RUN_PE_COVID19_NoOver_V1(resultBase,nThetaGuesses,expdata)
     
     %% Add necessary paths
     addpath('../Model')
+    addpath('../Data')
     addpath('../Model/AMIGOChanged')
     addpath('.')
 
@@ -79,7 +80,7 @@ function [] = RUN_PE_COVID19_NoOver_V1(resultBase,nThetaGuesses,expdata)
     end
     
     
-    for epcc_exps=1:nThetaGuesses
+    parfor epcc_exps=1:nThetaGuesses
         m = [resultBase,'-',num2str(epcc_exps),'.mat'];
 
         if ~ismember(m,fi)
