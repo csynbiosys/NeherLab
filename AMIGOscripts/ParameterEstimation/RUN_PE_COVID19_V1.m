@@ -56,9 +56,9 @@ function [] = RUN_PE_COVID19_V1(resultBase,nThetaGuesses,expdata)
     
     % %check the location of the parameters that are fixed
     ParFull = M2;  
-    save(['MatrixParameters_Model',num2str(mdl),'.mat'],'ParFull');
+    save(['MatrixParameters_COVID19','.mat'],'ParFull');
     
-    ParFull = load(['MatrixParameters_Model',num2str(mdl),'.mat']);
+    ParFull = load(['MatrixParameters_COVID19','.mat']);
     
     %% Run
     
@@ -79,7 +79,7 @@ function [] = RUN_PE_COVID19_V1(resultBase,nThetaGuesses,expdata)
     end
     
     
-    parfor epcc_exps=1:numExperiments
+    for epcc_exps=1:nThetaGuesses
         m = [resultBase,'-',num2str(epcc_exps),'.mat'];
 
         if ~ismember(m,fi)

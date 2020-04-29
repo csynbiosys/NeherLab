@@ -5,7 +5,7 @@
 %    -- expdata: Path for the matlab structure with the experimental data (String, only the name of the file)
 
 
-function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
+function [out] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
     
     %% Section taken from Processes (Lucia), helps me understand if there is
     % any errors or issues
@@ -47,7 +47,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     end
     
     %% Load Model
-    model = COVID19_NeherModel_V3_Over;
+    model = COVID19_NeherModel_V3_NoOver2;
     inputs.model = model;
     inputs.model.par=theta.par; % Default theta vector, need to see how to modify this deppending on what do we wanna do
 
@@ -85,8 +85,8 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
         %% Compute inputs for the model (this might need modifications deppending on what we wanna do or on how we handle the different parameters of the functions deppending on the data we have)
         % Example on how to define the mitigation measure structure
         mitigations = cell(1,2);
-        mitigations{1,1}.val = 0; mitigations{1,1}.tmin = Dat.Data.start_date{iexp}; mitigations{1,1}.tmax = Dat.Data.end_date{iexp};
-        mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = Dat.Data.end_date{iexp};
+        mitigations{1,1}.val = 40; mitigations{1,1}.tmin = Dat.Data.start_date{iexp}; mitigations{1,1}.tmax = Dat.Data.end_date{iexp};
+%         mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = Dat.Data.end_date{iexp};
 
         [cp, M_Tx, M_Ty, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
         
@@ -120,7 +120,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
         
         %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
             %%%%%%%%%%%%%%%%%%% INITIAL GUESS
-        y0 = ComputeY0_COVID19_Over_WebApp(AgeDistributions('Italy'),Dat.Data.exp_data{1}(1,1),inputs.model.par(1));
+        y0 = ComputeY0_COVID19_NoOver(AgeDistributions('Italy'),Dat.Data.exp_data{1}(1,1),sum(AgeDistributions('Italy')));
     
         exps.exp_y0{iexp} = y0;
     end
@@ -144,23 +144,51 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Need to check bounds to see which make more sense            
     for i=1:inputs.exps.n_exp
-         inputs.PEsol.id_global_theta_y0{i}=char('Sus_0','Exp1_0','Exp2_0','Exp3_0','Inf_0','Sev_0','Cri_0','Ovf_0','Rec_0','Fat_0','CumHos_0','CumCri_0', ...
-                    'Sus_1','Exp1_1','Exp2_1','Exp3_1','Inf_1','Sev_1','Cri_1','Ovf_1','Rec_1','Fat_1','CumHos_1','CumCri_1', ...
-                    'Sus_2','Exp1_2','Exp2_2','Exp3_2','Inf_2','Sev_2','Cri_2','Ovf_2','Rec_2','Fat_2','CumHos_2','CumCri_2', ...
-                    'Sus_3','Exp1_3','Exp2_3','Exp3_3','Inf_3','Sev_3','Cri_3','Ovf_3','Rec_3','Fat_3','CumHos_3','CumCri_3', ...
-                    'Sus_4','Exp1_4','Exp2_4','Exp3_4','Inf_4','Sev_4','Cri_4','Ovf_4','Rec_4','Fat_4','CumHos_4','CumCri_4', ...
-                    'Sus_5','Exp1_5','Exp2_5','Exp3_5','Inf_5','Sev_5','Cri_5','Ovf_5','Rec_5','Fat_5','CumHos_5','CumCri_5', ...
-                    'Sus_6','Exp1_6','Exp2_6','Exp3_6','Inf_6','Sev_6','Cri_6','Ovf_6','Rec_6','Fat_6','CumHos_6','CumCri_6', ...
-                    'Sus_7','Exp1_7','Exp2_7','Exp3_7','Inf_7','Sev_7','Cri_7','Ovf_7','Rec_7','Fat_7','CumHos_7','CumCri_7', ...
-                    'Sus_8','Exp1_8','Exp2_8','Exp3_8','Inf_8','Sev_8','Cri_8','Ovf_8','Rec_8','Fat_8','CumHos_8','CumCri_8');             % [] 'all'|User selected| 'none' (default)
+         inputs.PEsol.id_local_theta_y0{i}=char('Sus_0','Exp1_0','Exp2_0','Exp3_0','Inf_0','Sev_0','Cri_0','Rec_0','Fat_0','CumHos_0','CumCri_0', ...
+                    'Sus_1','Exp1_1','Exp2_1','Exp3_1','Inf_1','Sev_1','Cri_1','Rec_1','Fat_1','CumHos_1','CumCri_1', ...
+                    'Sus_2','Exp1_2','Exp2_2','Exp3_2','Inf_2','Sev_2','Cri_2','Rec_2','Fat_2','CumHos_2','CumCri_2', ...
+                    'Sus_3','Exp1_3','Exp2_3','Exp3_3','Inf_3','Sev_3','Cri_3','Rec_3','Fat_3','CumHos_3','CumCri_3', ...
+                    'Sus_4','Exp1_4','Exp2_4','Exp3_4','Inf_4','Sev_4','Cri_4','Rec_4','Fat_4','CumHos_4','CumCri_4', ...
+                    'Sus_5','Exp1_5','Exp2_5','Exp3_5','Inf_5','Sev_5','Cri_5','Rec_5','Fat_5','CumHos_5','CumCri_5', ...
+                    'Sus_6','Exp1_6','Exp2_6','Exp3_6','Inf_6','Sev_6','Cri_6','Rec_6','Fat_6','CumHos_6','CumCri_6', ...
+                    'Sus_7','Exp1_7','Exp2_7','Exp3_7','Inf_7','Sev_7','Cri_7','Rec_7','Fat_7','CumHos_7','CumCri_7', ...
+                    'Sus_8','Exp1_8','Exp2_8','Exp3_8','Inf_8','Sev_8','Cri_8','Rec_8','Fat_8','CumHos_8','CumCri_8');             % [] 'all'|User selected| 'none' (default)
      
-        inputs.PEsol.global_theta_y0_max{i}=repelem(1000, 108);                % Maximum allowed values for the initial conditions
-        inputs.PEsol.global_theta_y0_min{i}=repelem(0, 108);                % Minimum allowed values for the initial conditions
-        inputs.PEsol.global_theta_y0_guess{i}=inputs.exps.exp_y0{i};              % [] Initial guess
+        
+        
+        people = AgeDistributions('Italy');
+        inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
+        r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
+        for j=1:length(people)
+            inity0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people(j),repelem(sum(Dat.Data.exp_data{1}(:,1)), length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
+        end       
+        if sum(inity0<inputs.exps.exp_y0{i}(1:length(inputs.PEsol.id_local_theta_y0{i}))) == 0
+            inputs.PEsol.local_theta_y0_max{i}=inity0;                % Maximum allowed values for the initial conditions
+        else
+            inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
+            r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
+            for j=1:length(people)
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODIFY
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% IF
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WE
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AD N
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AS
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AN
+                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INPUT
+                people2 = round((people/sum(people))*inputs.model.par(1));
+                inity0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people2(j),repelem(sum(Dat.Data.exp_data{1}(:,1)), length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
+            end       
+        end
+        inputs.PEsol.local_theta_y0_min{i}=repelem(0, length(inputs.PEsol.id_local_theta_y0{i}));                % Minimum allowed values for the initial conditions
+        
+        
+        inputs.PEsol.local_theta_y0_guess{i}=inputs.exps.exp_y0{i}(1:length(inputs.PEsol.id_local_theta_y0{i}));              % [] Initial guess
     end
     
     % % LOCAL UNKNOWNS (DIFFERENT VALUES FOR DIFFERENT EXPERIMENTS)
-    % 
+    % inputs.PEsol.global_theta_y0_max{i}=repelem(1000, 108);                % Maximum allowed values for the initial conditions
+%         inputs.PEsol.global_theta_y0_min{i}=repelem(0, 108);                % Minimum allowed values for the initial conditions
+%         inputs.PEsol.global_theta_y0_guess{i}=inputs.exps.exp_y0{i}(1:108);              % [] Initial guess
     % inputs.PEsol.id_local_theta{1}='none';                % [] 'all'|User selected| 'none' (default)
     % % inputs.PEsol.local_theta_max{iexp}=[];              % Maximum allowed values for the paramters
     % % inputs.PEsol.local_theta_min{iexp}=[];              % Minimum allowed values for the parameters
@@ -229,7 +257,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     
     
     
-
+out = 1;
 end
 
 
