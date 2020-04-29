@@ -5,7 +5,7 @@
 %    -- expdata: Path for the matlab structure with the experimental data (String, only the name of the file)
 
 
-function [out] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
+function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
     
     %% Section taken from Processes (Lucia), helps me understand if there is
     % any errors or issues

@@ -4,7 +4,7 @@
 %    -- expdata: Path for the matlab structure with the experimental data
 %    (String, only the name of the file)
 
-function [] = RUN_PE_COVID19_V1(resultBase,nThetaGuesses,expdata)
+function [] = RUN_PE_COVID19_NoOver_V1(resultBase,nThetaGuesses,expdata)
     
     %% Add necessary paths
     addpath('../Model')
@@ -87,7 +87,7 @@ function [] = RUN_PE_COVID19_V1(resultBase,nThetaGuesses,expdata)
             try
                 global_theta_guess = ParFull.ParFull(epcc_exps,:);
                 epccOutputResultFileNameBase = [resultBase,'-',num2str(epcc_exps)];
-                [out] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta);
+                [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta);
             catch err
                 %open file
                 errorFile = [resultBase,'-',num2str(epcc_exps),'.errorLog'];
