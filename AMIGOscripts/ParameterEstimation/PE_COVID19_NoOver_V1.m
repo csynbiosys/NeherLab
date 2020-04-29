@@ -54,7 +54,8 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
     inputs.pathd.results_folder = results_folder;                        
     inputs.pathd.short_name     = short_name;
     inputs.pathd.runident       = 'initial_setup';
-
+    
+    
 
     %% Define boundaries for the parameters (Need to discuss boundaries for the different parameters)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Boundaries????
@@ -117,6 +118,9 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
         exps.noise_type = Dat.Data.noise_type{iexp};
         exps.exp_data{iexp} = Dat.Data.exp_data{iexp}';
         exps.error_data{iexp} = Dat.Data.error_data{iexp}';
+        
+        inputs.model.par(1) = sum(AgeDistributions(Dat.Data.country_id{iexp}));    
+        global_theta_guess(1) = sum(AgeDistributions(Dat.Data.country_id{iexp}));
         
         %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
             %%%%%%%%%%%%%%%%%%% INITIAL GUESS

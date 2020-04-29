@@ -46,15 +46,22 @@ function [out] = PE_COVID19_Over_V1(epccOutputResultFileNameBase,epcc_exps,globa
         Dat = load(['../Data/',expdata,'.mat']);
     end
     
+    %% Load ICU Beds data
+    ICUB = readtable('../Data/ICUBedsCapacity.csv');
+    countr = ICUB.Country;
+    beds = ICUB.ICUBeds;
+
+    
     %% Load Model
     model = COVID19_NeherModel_V3_Over;
     inputs.model = model;
     inputs.model.par=theta.par; % Default theta vector, need to see how to modify this deppending on what do we wanna do
-
+    
     inputs.pathd.results_folder = results_folder;                        
     inputs.pathd.short_name     = short_name;
     inputs.pathd.runident       = 'initial_setup';
-
+    
+    
 
     %% Define boundaries for the parameters (Need to discuss boundaries for the different parameters)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Boundaries????
@@ -117,6 +124,23 @@ function [out] = PE_COVID19_Over_V1(epccOutputResultFileNameBase,epcc_exps,globa
         exps.noise_type = Dat.Data.noise_type{iexp};
         exps.exp_data{iexp} = Dat.Data.exp_data{iexp}';
         exps.error_data{iexp} = Dat.Data.error_data{iexp}';
+        
+        
+        %% Region deppendent parameters
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% NEDS TO BE MODIFIED IF WE DO MULTIEXPERIMENTAL FIT TO BE INTRODUCED AS AN INPUT 
+        icub = 0;
+        for h=1:length(countr)
+            if strcmp(countr{h}, Dat.Data.country_id{iexp})
+                icub = beds(h);
+            end
+        end    
+    
+    
+        inputs.model.par(1) = sum(AgeDistributions(Dat.Data.country_id{iexp}));
+        inputs.model.par(7) = icub;
+
+        global_theta_guess(1) = sum(AgeDistributions(Dat.Data.country_id{iexp}));
+        global_theta_guess(7) = icub;
         
         %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
             %%%%%%%%%%%%%%%%%%% INITIAL GUESS
