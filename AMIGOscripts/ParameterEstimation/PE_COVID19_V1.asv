@@ -5,7 +5,7 @@
 %    -- expdata: Path for the matlab structure with the experimental data (String, only the name of the file)
 
 
-function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
+function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata)
     
     %% Section taken from Processes (Lucia), helps me understand if there is
     % any errors or issues
@@ -49,7 +49,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     %% Load Model
     model = COVID19_NeherModel_V3_Over;
     inputs.model = model;
-    inputs.model.par=theta.par; % Default theta vector, need to see how to modify this deppending on what do we wanna do
+    inputs.model.par=Params_SIR([],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[5,5,5,5,5,5,5,5,5]); % Default theta vector, need to see how to modify this deppending on what do we wanna do
 
     inputs.pathd.results_folder = results_folder;                        
     inputs.pathd.short_name     = short_name;
@@ -58,8 +58,16 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
 
     %% Define boundaries for the parameters (Need to discuss boundaries for the different parameters)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Boundaries????
-    global_theta_min = theta.min;
-    global_theta_max = theta.max;
+    global_theta_min = [0,0,0,0,0,0,0,0,0,0,...
+                        0,0,0,0,0,0,0,0,0,0,...
+                        0,0,0,0,0,0,0,0,0,0,...
+                        0,0,0,0,0,0,0,0,0,0,...
+                        0,0,0,0,0,0,0];
+    global_theta_max = [10,10,5,10,10,10,10,10,10,10,...
+                        10,10,10,10,10,10,10,10,10,10,...
+                        10,10,10,10,10,10,10,10,10,10,...
+                        10,10,10,10,10,10,10,10,10,10,...
+                        10,10,10,10,10,10,10];
 
     global_theta_guess = global_theta_guess';
 
@@ -128,7 +136,11 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
 
     %% Parameters to fit
     best_global_theta = global_theta_guess; % Need to add modifications in this vector (here or from outside) so it takes the necessary default values
-    param_including_vector = theta.fit;
+    param_including_vector = [false,true,true,false,false,false,false,false,false,false,...
+                                false,false,false,false,false,false,false,false,false,false,...
+                                false,false,false,false,false,false,false,false,false,false,...
+                                false,false,false,false,false,false,false,false,false,false,...
+                                false,false,false,false,false,false,false];
 
 
     %% Define inputs structure for AMIGO
@@ -141,10 +153,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
     inputs.PEsol.global_theta_min=global_theta_min(param_including_vector);  % Minimum allowed values for the parameters
     
     % % GLOBAL INITIAL CONDITIONS (Change this is multi-data fit will be done)
-    
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Need to check bounds to see which make more sense            
-    for i=1:inputs.exps.n_exp
-         inputs.PEsol.id_global_theta_y0{i}=char('Sus_0','Exp1_0','Exp2_0','Exp3_0','Inf_0','Sev_0','Cri_0','Ovf_0','Rec_0','Fat_0','CumHos_0','CumCri_0', ...
+     inputs.PEsol.id_global_theta_y0=char('Sus_0','Exp1_0','Exp2_0','Exp3_0','Inf_0','Sev_0','Cri_0','Ovf_0','Rec_0','Fat_0','CumHos_0','CumCri_0', ...
                     'Sus_1','Exp1_1','Exp2_1','Exp3_1','Inf_1','Sev_1','Cri_1','Ovf_1','Rec_1','Fat_1','CumHos_1','CumCri_1', ...
                     'Sus_2','Exp1_2','Exp2_2','Exp3_2','Inf_2','Sev_2','Cri_2','Ovf_2','Rec_2','Fat_2','CumHos_2','CumCri_2', ...
                     'Sus_3','Exp1_3','Exp2_3','Exp3_3','Inf_3','Sev_3','Cri_3','Ovf_3','Rec_3','Fat_3','CumHos_3','CumCri_3', ...
@@ -154,9 +163,11 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
                     'Sus_7','Exp1_7','Exp2_7','Exp3_7','Inf_7','Sev_7','Cri_7','Ovf_7','Rec_7','Fat_7','CumHos_7','CumCri_7', ...
                     'Sus_8','Exp1_8','Exp2_8','Exp3_8','Inf_8','Sev_8','Cri_8','Ovf_8','Rec_8','Fat_8','CumHos_8','CumCri_8');             % [] 'all'|User selected| 'none' (default)
      
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Need to check bounds to see which make more sense            
+    for i=1:inputs.exps.n_exp
         inputs.PEsol.global_theta_y0_max{i}=repelem(1000, 108);                % Maximum allowed values for the initial conditions
-        inputs.PEsol.global_theta_y0_min{i}=repelem(0, 108);                % Minimum allowed values for the initial conditions
-        inputs.PEsol.global_theta_y0_guess{i}=inputs.exps.exp_y0{i};              % [] Initial guess
+        inputs.PEsol.global_theta_y0_min=repelem(0, 108);                % Minimum allowed values for the initial conditions
+        inputs.PEsol.global_theta_y0_guess=y0;              % [] Initial guess
     end
     
     % % LOCAL UNKNOWNS (DIFFERENT VALUES FOR DIFFERENT EXPERIMENTS)
