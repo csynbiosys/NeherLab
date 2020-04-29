@@ -1,0 +1,61 @@
+
+
+function [] = AgeDistributions(country)
+
+
+switch country
+    case {'Italy','italy'}
+        
+    case {'Spain','spain'}
+        
+    case 
+
+
+
+
+
+
+
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

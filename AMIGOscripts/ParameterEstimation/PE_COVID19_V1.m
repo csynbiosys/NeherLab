@@ -57,7 +57,7 @@ function [] = PE_COVID19_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_
 
     %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
             %%%%%%%%%%%%%%%%%%% INITIAL GUESS?????
-    y0 = ComputeY0_COVID19_Over_WebApp([],[],inputs.model.par(1));
+    y0 = ComputeY0_COVID19_Over_WebApp(AgeDistributions('Italy'),Dat.Data.exp_data{1}(1,1),inputs.model.par(1));
     
     
     
