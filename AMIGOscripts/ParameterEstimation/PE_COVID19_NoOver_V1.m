@@ -88,9 +88,12 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
         mitigations = cell(1,2);
         mitigations{1,1}.val = 40; mitigations{1,1}.tmin = Dat.Data.start_date{iexp}; mitigations{1,1}.tmax = Dat.Data.end_date{iexp};
 %         mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = Dat.Data.end_date{iexp};
-
-        [cp, M_Tx, M_Ty, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
-        
+        try
+            [cp, M_Tx, ~, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
+            M_Ty = ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp});
+        catch
+            [cp, M_Tx, M_Ty, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
+        end
 %         exp_indexData = exps_indexTraining(iexp);
         exps.exp_type{iexp} = Dat.Data.exp_type{1}; 
 
