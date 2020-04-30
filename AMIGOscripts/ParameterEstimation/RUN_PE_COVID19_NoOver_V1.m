@@ -32,7 +32,7 @@ function [] = RUN_PE_COVID19_NoOver_V1(resultBase,nThetaGuesses,expdata)
                                 false,false,false,false,false,false,false,false,false,false,...
                                 false,false,false,false,false,false,false];
                             
-    param = Params_SIR([],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[5,5,5,5,5,5,5,5,5]); % Default theta vector, need to see how to modify this deppending on what do we wanna do
+    param = Params_SIR([],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]); % Default theta vector, need to see how to modify this deppending on what do we wanna do
     
     theta.par = param;
     theta.max = theta_max;
