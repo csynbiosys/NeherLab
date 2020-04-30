@@ -243,7 +243,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
     pe_end = now;
     
     % Save the best theta
-    best_global_theta(param_including_vector) = results.fit.thetabest;
+    best_global_theta(param_including_vector) = results.fit.thetabest(1:length(find(param_including_vector==1)));
     
     % Write results to the output file
     fid = fopen(resultFileName,'a');

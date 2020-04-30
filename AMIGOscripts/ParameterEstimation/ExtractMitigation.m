@@ -4,7 +4,7 @@
 %   - fd: First day of the simulation (string)
 %   - ld: Last day of the simulation (string)
 
-function [] = ExtractMitigation(country, fd, ld)
+function [mitigation] = ExtractMitigation(country, fd, ld)
 %% Ad path of directory with mitigation json file
 addpath('../../policy')
 
@@ -36,9 +36,6 @@ for i=1:length(mitval)
 end
 
 %% Check for empty dates
-mitdat = mitdat(mitdat~="12-Apr-2020")
-mitdat = mitdat(mitdat~="16-Apr-2020")
-mitdat = mitdat(mitdat~="17-Apr-2020")
 rnod = datetime(mitdat(1,1)):datetime(mitdat(1,end)); % Real vector of dates of days
 rnod = string(datestr(rnod))';
 
@@ -48,19 +45,29 @@ if length(mitdat)~=length(rnod)
     for i=1:max(length(mitdat),length(rnod))
         if length(mitdat)<i
             mitdat = [mitdat,rnod(i)];
-            disp(i)
+            mitval = [mitval,mitval(end)];
         elseif ~strcmp(mitdat(1,i),rnod(1,i))
             mitdat = [mitdat(1:i-1), rnod(i), mitdat(i:end)];
-            disp(i)
+            mitval = [mitval(1:i-1), mitval(i-1),mitval(i:end)]; %% Alternative is to ad average of mitval(i-1) and mitval(i), which would be an interpolation
         end
     end
 end
 
 
+%% Extract mitigation vector bounded by the desired dates
+simd = datetime(fd):datetime(ld); % Real vector of dates of days
+simd = string(datestr(simd))';
 
+indxs = zeros(1,length(mitdat));
+for i=1:length(mitdat)
+    for j=1:length(simd)
+        if strcmp(mitdat(1,i),simd(1,j))
+            indxs(1,i) = true;
+        end
+    end
+end
 
-
-
+mitigation = mitval(indxs==1);
 
 
 
