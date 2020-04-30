@@ -107,7 +107,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
 
         exps.n_obs{iexp}=Dat.Data.n_obs{iexp};                                        % Number of observables per experiment        
         exps.obs_names{iexp} = Dat.Data.obs_names{iexp};
-        exps.obs{iexp} = char('CumInfected = Inf','CumHospitalised = Sev','CumCritical = Cri','CumRecovered = Rec','CumDead = Fat');% Name of the observables 
+        exps.obs{iexp} = GetObser(Dat.Data.obs{iexp});% Name of the observables 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Considers that we have the same number of points for each observable
@@ -299,7 +299,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
 
         exps.n_obs{iexp}=Dat.Data.n_obs{iexp};                                        % Number of observables per experiment        
         exps.obs_names{iexp} = Dat.Data.obs_names{iexp};
-        exps.obs{iexp} = char('CumInfected = Inf','CumHospitalised = Sev','CumCritical = Cri','CumRecovered = Rec','CumDead = Fat');% Name of the observables 
+        exps.obs{iexp} = GetObser(Dat.Data.obs{iexp});% Name of the observables 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Considers that we have the same number of points for each observable

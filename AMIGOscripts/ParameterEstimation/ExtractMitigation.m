@@ -35,6 +35,13 @@ for i=1:length(mitval)
     mitdat(1,i) = GetDateJson(mitdatB{i});
 end
 
+%% Check if we are asking for days with no data
+if datetime(mitdat(1,end)) < datetime(ld)
+    disp('You have asked to account for days where we do not have mitigation policy values!!!!')
+    return
+end
+
+
 %% Check for empty dates
 rnod = datetime(mitdat(1,1)):datetime(mitdat(1,end)); % Real vector of dates of days
 rnod = string(datestr(rnod))';
