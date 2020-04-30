@@ -245,7 +245,7 @@ function [out] = PE_COVID19_Over_V1(epccOutputResultFileNameBase,epcc_exps,globa
     inputs.nlpsol.nlpsolver='eSS';
     inputs.nlpsol.eSS.maxeval = 200000;
     inputs.nlpsol.eSS.maxtime = 5000;
-    inputs.nlpsol.eSS.log_var = [find(param_including_vector==1)]; % Modify this according to the parameters we want to fit
+    inputs.nlpsol.eSS.log_var = [1:length(find(param_including_vector==1))];%[find(param_including_vector==1)]; % Modify this according to the parameters we want to fit
     inputs.nlpsol.eSS.local.solver = 'lsqnonlin'; 
     inputs.nlpsol.eSS.local.finish = 'lsqnonlin';
     inputs.rid.conf_ntrials=500;

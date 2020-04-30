@@ -215,15 +215,15 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
     inputs.ivpsol.ivpsolver='cvodes';
     inputs.ivpsol.senssolver='fdsens5';
     inputs.model.positiveStates=1;
-    inputs.ivpsol.rtol=1.0D-11;
-    inputs.ivpsol.atol=1.0D-11;
+    inputs.ivpsol.rtol=1.0D-8;
+    inputs.ivpsol.atol=1.0D-8;
 
     
     % OPTIMIZATION (Check if we are gonna use this or something else)
     inputs.nlpsol.nlpsolver='eSS';
     inputs.nlpsol.eSS.maxeval = 200000;
     inputs.nlpsol.eSS.maxtime = 5000;
-    inputs.nlpsol.eSS.log_var = [find(param_including_vector==1)]; % Modify this according to the parameters we want to fit
+    inputs.nlpsol.eSS.log_var = [1:length(find(param_including_vector==1))];%[find(param_including_vector==1)]; % Modify this according to the parameters we want to fit
     inputs.nlpsol.eSS.local.solver = 'lsqnonlin'; 
     inputs.nlpsol.eSS.local.finish = 'lsqnonlin';
     inputs.rid.conf_ntrials=500;
