@@ -218,8 +218,8 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
     inputs.ivpsol.ivpsolver='cvodes';
     inputs.ivpsol.senssolver='fdsens5';
     inputs.model.positiveStates=1;
-    inputs.ivpsol.rtol=1.0D-11;
-    inputs.ivpsol.atol=1.0D-11;
+    inputs.ivpsol.rtol=1.0D-8;
+    inputs.ivpsol.atol=1.0D-8;
 
     
     % OPTIMIZATION (Check if we are gonna use this or something else)
