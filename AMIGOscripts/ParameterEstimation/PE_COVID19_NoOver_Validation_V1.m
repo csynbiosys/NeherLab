@@ -97,7 +97,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
 
         try
             [cp, M_Tx, ~, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
-            M_Ty = ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp});
+            M_Ty = min(max(1-ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp}),0.01),1);
         catch
             [cp, M_Tx, M_Ty, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
         end
@@ -289,7 +289,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
 
         try
             [cp, M_Tx, ~, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
-            M_Ty = ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp});
+            M_Ty = min(max(1-ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp}),0.01),1);
         catch
             [cp, M_Tx, M_Ty, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
         end
