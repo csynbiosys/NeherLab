@@ -5,11 +5,11 @@
 
 % Example on how to define the mitigation measure structure
 mitigations = cell(1,2);
-mitigations{1,1}.val = 40; mitigations{1,1}.tmin = '1-feb-2020'; mitigations{1,1}.tmax = '1-sep-2020';
+mitigations{1,1}.val = 40; mitigations{1,1}.tmin = Dat.Data.start_date{iexp}; mitigations{1,1}.tmax = Dat.Data.end_date{iexp};
 % mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = '1-may-2020';
 
-[cp, M_Tx, M_Ty, T_endx] = Inputs_SIR([],[],[],mitigations);
-M_Ty = ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp});
+[cp, M_Tx, M_Ty, T_endx] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},[],mitigations);
+M_Ty = min(max(1-ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp}),0.01),1);
 
 %% Directory of AMIGO reults and others
 foldnam = 'TestNeherModelCovid19_Rep3';
