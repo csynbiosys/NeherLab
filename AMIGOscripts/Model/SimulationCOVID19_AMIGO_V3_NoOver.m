@@ -5,11 +5,11 @@
 
 % Example on how to define the mitigation measure structure
 mitigations = cell(1,2);
-mitigations{1,1}.val = 40; mitigations{1,1}.tmin = Dat.Data.start_date{iexp}; mitigations{1,1}.tmax = Dat.Data.end_date{iexp};
+mitigations{1,1}.val = 40; mitigations{1,1}.tmin = '1-Feb-2020'; mitigations{1,1}.tmax = '1-May-2020';
 % mitigations{1,2}.val = 60; mitigations{1,2}.tmin = '1-mar-2020'; mitigations{1,2}.tmax = '1-may-2020';
 
-[cp, M_Tx, M_Ty, T_endx] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},[],mitigations);
-M_Ty = min(max(1-ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp}),0.01),1);
+[cp, M_Tx, M_Ty, T_endx] = Inputs_SIR('1-Feb-2020','1-May-2020',[],mitigations);
+% M_Ty = min(max(1-ExtractMitigation(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp}),0.01),1);
 
 %% Directory of AMIGO reults and others
 foldnam = 'TestNeherModelCovid19_Rep3';
@@ -45,7 +45,7 @@ inputs.pathd.runident       = 'initial_setup';
 
 %% Experiment
 
-y0 = ComputeY0_COVID19_NoOver([],[],inputs.model.par(1));
+y0 = ComputeY0_COVID19_NoOver([],200,inputs.model.par(1));
 
 % Time definition
 duration = T_endx;               % Duration in of the experiment (days)

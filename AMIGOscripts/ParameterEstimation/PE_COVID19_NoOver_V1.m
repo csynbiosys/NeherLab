@@ -50,13 +50,13 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
     model = COVID19_NeherModel_V3_NoOver2;
     inputs.model = model;
     inputs.model.par=theta.par; % Default theta vector, need to see how to modify this deppending on what do we wanna do
-
+    
     inputs.pathd.results_folder = results_folder;                        
     inputs.pathd.short_name     = short_name;
     inputs.pathd.runident       = 'initial_setup';
     
     
-
+    
     %% Define boundaries for the parameters (Need to discuss boundaries for the different parameters)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Boundaries????
     global_theta_min = theta.min;
@@ -163,7 +163,7 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
      
         
         
-        people = AgeDistributions(Dat.Data.country_id{iexp});
+        people = AgeDistributions(Dat.Data.country_id{i});
         inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
         r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
         for j=1:length(people)

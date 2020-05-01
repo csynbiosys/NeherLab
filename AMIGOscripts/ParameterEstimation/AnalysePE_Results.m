@@ -81,13 +81,18 @@ saveas(gcf,[dire, 'SimulationVSData.png'])
 
 %% Distributions of parameters
 
+mkdir([dire,'Distributions'])
 for i=1:length((bestfit.pe_results.fit.thetabest))
-    
-    
+    dist = normpdf([bestfit.pe_results.fit.thetabest(i)-(4*bestfit.pe_results.fit.g_var_cov_mat(i,i)):(bestfit.pe_results.fit.thetabest(i)/100):bestfit.pe_results.fit.thetabest(i)+(4*bestfit.pe_results.fit.g_var_cov_mat(i,i))],...
+        bestfit.pe_results.fit.thetabest(i),bestfit.pe_results.fit.g_var_cov_mat(i,i));
+    figure
+    plot([bestfit.pe_results.fit.thetabest(i)-(4*bestfit.pe_results.fit.g_var_cov_mat(i,i)):(bestfit.pe_results.fit.thetabest(i)/100):bestfit.pe_results.fit.thetabest(i)+(4*bestfit.pe_results.fit.g_var_cov_mat(i,i))],...
+        dist)
+    ylabel('Density')
+    nam = (bestfit.pe_inputs.PEsol.id_global_theta(i,:));
+    xlabel(nam)
+    saveas(gcf,strcat(dire,'Distributions\', 'KernelDensity_',nam(find(~isspace(nam))),'.png'))
 end
-
-
-
 
 
 

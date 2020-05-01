@@ -171,7 +171,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
      
         
         
-        people = AgeDistributions(Dat.Data.country_id{iexp});
+        people = AgeDistributions(Dat.Data.country_id{i});
         inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
         r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
         for j=1:length(people)
