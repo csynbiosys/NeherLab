@@ -262,8 +262,8 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
     fprintf(fid,'PE_TIME %.1f\n', (pe_end-pe_start)*24*60*60);
     fclose(fid);
     
-    mkdir(['PE_Results_', expdata,'_',date ])
-    save([strcat('PE_Results_', expdata,'_',date, '/', epccOutputResultFileNameBase,'.mat')],'pe_results','exps','pe_inputs','best_global_theta');
+%     mkdir(['PE_Results_', expdata,'_',date ])
+    save([strcat(epccOutputResultFileNameBase,'.mat')],'pe_results','exps','pe_inputs','best_global_theta');
     
     
     %% Simulation of validation set
@@ -373,7 +373,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
         
     sim_inputs = inputs;
     sim_exps = exps;
-    save([strcat('PE_Results_', expdata,'_',date, '/','Sim-',epccOutputResultFileNameBase,'.mat')],'sim_results','sim_inputs','sim_exps','best_global_theta','SSE','nanpres');
+    save([strcat('Sim-',epccOutputResultFileNameBase,'.mat')],'sim_results','sim_inputs','sim_exps','best_global_theta','SSE','nanpres');
 
     
     

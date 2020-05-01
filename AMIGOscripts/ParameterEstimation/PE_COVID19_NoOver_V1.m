@@ -239,7 +239,7 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
     pe_end = now;
     
     % Save the best theta
-    best_global_theta(param_including_vector) = results.fit.thetabest;
+    best_global_theta(param_including_vector) = results.fit.thetabest(1:length(find(param_including_vector==1)));
     
     % Write results to the output file
     fid = fopen(resultFileName,'a');
@@ -253,8 +253,8 @@ function [out] = PE_COVID19_NoOver_V1(epccOutputResultFileNameBase,epcc_exps,glo
     fprintf(fid,'PE_TIME %.1f\n', (pe_end-pe_start)*24*60*60);
     fclose(fid);
     
-    mkdir(['PE_Results_', expdata,'_',date ])
-    save([strcat('PE_Results_', expdata,'_',date, '/', epccOutputResultFileNameBase,'.mat')],'pe_results','exps','pe_inputs','best_global_theta');
+%     mkdir(['PE_Results_', expdata,'_',date ])
+    save([strcat(epccOutputResultFileNameBase,'.mat')],'pe_results','exps','pe_inputs','best_global_theta');
     
     
     %% Simulation of validation set????
