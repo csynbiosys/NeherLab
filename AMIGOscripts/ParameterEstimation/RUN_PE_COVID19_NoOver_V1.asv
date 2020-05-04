@@ -63,8 +63,6 @@ function [] = RUN_PE_COVID19_NoOver_V1(resultBase,nThetaGuesses,expdata)
     ParFull = load(['MatrixParameters_COVID19','.mat']);
     
     
-    theta_min = zeros(1,length(theta_min));
-    theta.min = theta_min;
     
     %% Run
     
