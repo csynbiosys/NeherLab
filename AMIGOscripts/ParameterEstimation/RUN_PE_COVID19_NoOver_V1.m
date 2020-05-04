@@ -43,11 +43,13 @@ function [] = RUN_PE_COVID19_NoOver_V1(resultBase,nThetaGuesses,expdata)
 
     M_norm = lhsdesign(nThetaGuesses,length(theta_min(param_including_vector)));
     M = zeros(size(M_norm));
+    d = find(param_including_vector==1);
     for c=1:size(M_norm,2)
         for r=1:size(M_norm,1)
-            M(r,c) = 10^(M_norm(r,c)*(log10(theta_max(1,c))-log10(theta_min(1,c)))+log10(theta_min(1,c))); % log exploration
+            M(r,c) = 10^(M_norm(r,c)*(log10(theta_max(1,d(c)))-log10(theta_min(1,d(c))))+log10(theta_min(1,d(c)))); % log exploration
         end
     end 
+
     
     M2 = zeros(nThetaGuesses,length(theta_min));
     for i=1:size(M_norm,1)
