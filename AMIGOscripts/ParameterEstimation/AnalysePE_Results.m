@@ -38,6 +38,17 @@ bestfit = load([dire,ftag,num2str(bestind),'.mat']);
 save([dire,'BestFit.mat'],'bestfit')
 
 %% Simulate against data
+% [a,b] = size(bestfit.pe_results.sim.states{1});
+% 
+% cumResCov19 = zeros(a,(b-9)/9);
+% r = 1:11:b;
+% for i=1:11 % States    
+%     for j=1:9 % Agge groups
+%         cumResCov19(:,i) = cumResCov19(:,i) + bestfit.pe_results.sim.states{1}(:,r(j));
+%     end
+%     r = r+1;
+% end
+
 
 figure
 subplot(5,1,1)

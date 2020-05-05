@@ -5,7 +5,7 @@
 %    -- expdata: Path for the matlab structure with the experimental data (String, only the name of the file)
 
 
-function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
+function [out] = PE_COVID19_NoOver_Validation_V2(epccOutputResultFileNameBase,epcc_exps,global_theta_guess,expdata,theta)
     
     % Percentatges of amount of data used for training (trn) and validation
     % (vld)
@@ -51,7 +51,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
     end
     
     %% Load Model
-    model = COVID19_NeherModel_V3_NoOver2;
+    model = COVID19_NeherModel_V4_NoOver2_Red;
     inputs.model = model;
     inputs.model.par=theta.par; % Default theta vector, need to see how to modify this deppending on what do we wanna do
 
@@ -107,7 +107,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
 
         exps.n_obs{iexp}=Dat.Data.n_obs{iexp};                                        % Number of observables per experiment        
         exps.obs_names{iexp} = Dat.Data.obs_names{iexp};
-        exps.obs{iexp} = GetObser(Dat.Data.obs{iexp});% Name of the observables 
+        exps.obs{iexp} = GetObser_V2(Dat.Data.obs{iexp});% Name of the observables 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Considers that we have the same number of points for each observable
@@ -135,9 +135,9 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
         
         %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
             %%%%%%%%%%%%%%%%%%% INITIAL GUESS
-        y0 = ComputeY0_COVID19_NoOver(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})));
+        y0 = ComputeY0_COVID19_NoOver_DataBased(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})),Dat.Data.exp_data{1});
     
-        exps.exp_y0{iexp} = y0;
+        exps.exp_y0{iexp} = y0(1:end-9);
     end
 
 
@@ -159,21 +159,22 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%% Need to check bounds to see which make more sense            
     for i=1:inputs.exps.n_exp
-         inputs.PEsol.id_local_theta_y0{i}=char('Sus_0','Exp1_0','Exp2_0','Exp3_0','Inf_0','Sev_0','Cri_0','Rec_0','Fat_0','CumHos_0','CumCri_0', ...
-                    'Sus_1','Exp1_1','Exp2_1','Exp3_1','Inf_1','Sev_1','Cri_1','Rec_1','Fat_1','CumHos_1','CumCri_1', ...
-                    'Sus_2','Exp1_2','Exp2_2','Exp3_2','Inf_2','Sev_2','Cri_2','Rec_2','Fat_2','CumHos_2','CumCri_2', ...
-                    'Sus_3','Exp1_3','Exp2_3','Exp3_3','Inf_3','Sev_3','Cri_3','Rec_3','Fat_3','CumHos_3','CumCri_3', ...
-                    'Sus_4','Exp1_4','Exp2_4','Exp3_4','Inf_4','Sev_4','Cri_4','Rec_4','Fat_4','CumHos_4','CumCri_4', ...
-                    'Sus_5','Exp1_5','Exp2_5','Exp3_5','Inf_5','Sev_5','Cri_5','Rec_5','Fat_5','CumHos_5','CumCri_5', ...
-                    'Sus_6','Exp1_6','Exp2_6','Exp3_6','Inf_6','Sev_6','Cri_6','Rec_6','Fat_6','CumHos_6','CumCri_6', ...
-                    'Sus_7','Exp1_7','Exp2_7','Exp3_7','Inf_7','Sev_7','Cri_7','Rec_7','Fat_7','CumHos_7','CumCri_7', ...
-                    'Sus_8','Exp1_8','Exp2_8','Exp3_8','Inf_8','Sev_8','Cri_8','Rec_8','Fat_8','CumHos_8','CumCri_8');             % [] 'all'|User selected| 'none' (default)
+         inputs.PEsol.id_local_theta_y0{i}=char('Sus_0','Exp1_0','Exp2_0','Exp3_0', ...
+                    'Sus_1','Exp1_1','Exp2_1','Exp3_1', ...
+                    'Sus_2','Exp1_2','Exp2_2','Exp3_2', ...
+                    'Sus_3','Exp1_3','Exp2_3','Exp3_3', ...
+                    'Sus_4','Exp1_4','Exp2_4','Exp3_4', ...
+                    'Sus_5','Exp1_5','Exp2_5','Exp3_5', ...
+                    'Sus_6','Exp1_6','Exp2_6','Exp3_6', ...
+                    'Sus_7','Exp1_7','Exp2_7','Exp3_7', ...
+                    'Sus_8','Exp1_8','Exp2_8','Exp3_8');             % [] 'all'|User selected| 'none' (default)
      
         
-        
+        y0guess = ComputeY0Guess_COVID19_NoOver_DataBased(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})));
+    
         people = AgeDistributions(Dat.Data.country_id{i});
         inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
-        r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
+        r = 1:(length(inputs.PEsol.id_local_theta_y0{i})/9):length(inputs.PEsol.id_local_theta_y0{i});
         for j=1:length(people)
             inity0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people(j),repelem(((people(j)*0.3)), length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
             botty0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people(j)-(people(j)*0.3),repelem(0, length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
@@ -199,7 +200,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
 %         inputs.PEsol.local_theta_y0_min{i}=repelem(0, length(inputs.PEsol.id_local_theta_y0{i}));                % Minimum allowed values for the initial conditions
         
         
-        inputs.PEsol.local_theta_y0_guess{i}=inputs.exps.exp_y0{i}(1:length(inputs.PEsol.id_local_theta_y0{i}));              % [] Initial guess
+        inputs.PEsol.local_theta_y0_guess{i}=y0guess;              % [] Initial guess
     end
     
     % % LOCAL UNKNOWNS (DIFFERENT VALUES FOR DIFFERENT EXPERIMENTS)
@@ -225,8 +226,8 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
     inputs.ivpsol.ivpsolver='cvodes';
     inputs.ivpsol.senssolver='fdsens5';
     inputs.model.positiveStates=1;
-    inputs.ivpsol.rtol=1.0D-8;
-    inputs.ivpsol.atol=1.0D-8;
+    inputs.ivpsol.rtol=1.0D-7;
+    inputs.ivpsol.atol=1.0D-7;
 
     
     % OPTIMIZATION (Check if we are gonna use this or something else)
@@ -301,7 +302,7 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
 
         exps.n_obs{iexp}=Dat.Data.n_obs{iexp};                                        % Number of observables per experiment        
         exps.obs_names{iexp} = Dat.Data.obs_names{iexp};
-        exps.obs{iexp} = GetObser(Dat.Data.obs{iexp});% Name of the observables 
+        exps.obs{iexp} = GetObser_V2(Dat.Data.obs{iexp});% Name of the observables 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Considers that we have the same number of points for each observable
@@ -325,10 +326,18 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
         exps.error_data{iexp} = Dat.Data.error_data{iexp}';
         
         %%%%%%%%%%%%%%%%%%%%% 
-        y0 = ComputeY0_COVID19_NoOver(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})));
-
+        y0 = ComputeY0_COVID19_NoOver_DataBased(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})),Dat.Data.exp_data{1});
+        y0=y0(1:end-9);
+        
+        leny0 = length(y0);
+        lengess = length(results.fit.local_theta_y0_estimated{iexp})/9;
+        r = 1:leny0/9:leny0;
+        r2 = 1:lengess:length(results.fit.local_theta_y0_estimated{iexp});
+        
         if isfield(results.fit, 'local_theta_y0_estimated')
-            y0(1:length(results.fit.local_theta_y0_estimated{iexp})) = results.fit.local_theta_y0_estimated{iexp};
+            for i=1:9
+                y0(r(i):r(i)+lengess-1) = results.fit.local_theta_y0_estimated{iexp}(r2(i):r2(i)+lengess-1);
+            end
         end
         exps.exp_y0{iexp} = y0;
         
@@ -350,8 +359,8 @@ function [out] = PE_COVID19_NoOver_Validation_V1(epccOutputResultFileNameBase,ep
     inputs.ivpsol.ivpsolver='cvodes';
     inputs.ivpsol.senssolver='fdsens5';
     inputs.model.positiveStates=1;
-    inputs.ivpsol.rtol=1.0D-8;
-    inputs.ivpsol.atol=1.0D-8;
+    inputs.ivpsol.rtol=1.0D-7;
+    inputs.ivpsol.atol=1.0D-7;
     
     AMIGO_Prep(inputs);
     

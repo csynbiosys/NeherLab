@@ -168,10 +168,12 @@ function [out] = PE_COVID19_NoOver_V2(epccOutputResultFileNameBase,epcc_exps,glo
         inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
         r = 1:(length(inputs.PEsol.id_local_theta_y0{i})/9):length(inputs.PEsol.id_local_theta_y0{i});
         for j=1:length(people)
-            inity0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people(j),repelem(sum(Dat.Data.exp_data{1}(:,1)), length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
+            inity0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people(j),repelem((people(j)*0.3)), length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
+            botty0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people(j)-(people(j)*0.3),repelem(0, length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
         end       
         if sum(inity0<y0guess) == 0
             inputs.PEsol.local_theta_y0_max{i}=inity0;                % Maximum allowed values for the initial conditions
+            inputs.PEsol.local_theta_y0_min{i}=botty0;
         else
             inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
             r = 1:11:length(inputs.PEsol.id_local_theta_y0{i});
@@ -187,7 +189,7 @@ function [out] = PE_COVID19_NoOver_V2(epccOutputResultFileNameBase,epcc_exps,glo
                 inity0(r(j):r(j)+(length(inputs.PEsol.id_local_theta_y0{i})/9-1)) = [people2(j),repelem(sum(Dat.Data.exp_data{1}(:,1)), length(inputs.PEsol.id_local_theta_y0{i})/9-1)];
             end       
         end
-        inputs.PEsol.local_theta_y0_min{i}=repelem(0, length(inputs.PEsol.id_local_theta_y0{i}));                % Minimum allowed values for the initial conditions
+%         inputs.PEsol.local_theta_y0_min{i}=repelem(0, length(inputs.PEsol.id_local_theta_y0{i}));                % Minimum allowed values for the initial conditions
         
         
         inputs.PEsol.local_theta_y0_guess{i}=y0guess;              % [] Initial guess
