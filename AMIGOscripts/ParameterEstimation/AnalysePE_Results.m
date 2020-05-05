@@ -1,8 +1,8 @@
 %% Directory and file names
 
 maind = ['E:\UNI\D_Drive\PhD\Year_1\2020_04_7_COVID19\GitRepo\AMIGOscripts\ParameterEstimation\'];
-dire = [maind, '\PE_GuessHalfY0_NoSumObs\'];
-ftag = ['PE_Test1_FitHalfY0-'];
+dire = [maind, '\PE_COVID19_Test1\'];
+ftag = ['PE_Test3_HalfY0_IntegerY0-'];
 
 %% Check convergence curves
 figure
