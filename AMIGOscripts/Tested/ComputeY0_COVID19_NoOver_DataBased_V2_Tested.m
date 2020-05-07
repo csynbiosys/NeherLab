@@ -140,7 +140,7 @@ pop(3, :) = pop(3, :) + cases*ages*0.7/3;
 pop(4, :) = pop(4, :) + cases*ages*0.7/3;
 
 
-pop(5, :) = pop(5, :) + (Inf*(1-test))/test;
+pop(5, :) = pop(5, :) + (Inf)/(test);
 
 pop(6, :) = pop(6, :) + Inf;
 pop(7, :) = pop(7, :) + Sev;

@@ -127,7 +127,7 @@ function [out] = PE_COVID19_NoOver_V2_Tested(epccOutputResultFileNameBase,epcc_e
         
         %% Compute Y0 (might not be required if we fit it, but we still need an initial guess)
             %%%%%%%%%%%%%%%%%%% INITIAL GUESS
-        y0 = ComputeY0_COVID19_NoOver_DataBased_V2_Tested(AgeDistributions(Dat.Data.country_id{iexp}),Dat.Data.exp_data{iexp}(1,1),...
+        y0 = ComputeY0_COVID19_NoOver_DataBased_V2_Tested(AgeDistributions(Dat.Data.country_id{iexp}),sum(Dat.Data.exp_data{iexp}(:,1)),...
             sum(AgeDistributions(Dat.Data.country_id{iexp})),Dat.Data.exp_data{1},global_theta_guess(12));
     
         exps.exp_y0{iexp} = y0;
@@ -164,7 +164,7 @@ function [out] = PE_COVID19_NoOver_V2_Tested(epccOutputResultFileNameBase,epcc_e
      
         
         y0guess = ComputeY0Guess_COVID19_NoOver_DataBased_Tested(AgeDistributions(Dat.Data.country_id{iexp}),...
-            Dat.Data.exp_data{iexp}(1,1),sum(AgeDistributions(Dat.Data.country_id{iexp})));
+            sum(Dat.Data.exp_data{iexp}(:,1)),sum(AgeDistributions(Dat.Data.country_id{iexp})));
     
         people = AgeDistributions(Dat.Data.country_id{i});
         inity0 = zeros(1,length(inputs.PEsol.id_local_theta_y0{i}));
@@ -236,7 +236,7 @@ function [out] = PE_COVID19_NoOver_V2_Tested(epccOutputResultFileNameBase,epcc_e
 
     %% Run
     AMIGO_Prep(inputs);
-    
+        
     pe_start = now;
     pe_inputs = inputs;
     results = AMIGO_PE(inputs);
