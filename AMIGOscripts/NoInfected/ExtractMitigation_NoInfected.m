@@ -34,7 +34,9 @@ mitdat = strings(1,length(mitval));
 for i=1:length(mitval)
     mitdat(1,i) = GetDateJson_NoInfected(mitdatB{i});
 end
-
+if max(mitval)>1
+    mitval = mitval/100;
+end
 %% Check if we are asking for days with no data
 if datetime(mitdat(1,end)) < datetime(ld)
     disp('You have asked to account for days where we do not have mitigation policy values!!!!')
