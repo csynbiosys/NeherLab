@@ -4,7 +4,7 @@
 %    -- expdata: Path for the matlab structure with the experimental data
 %    (String, only the name of the file)
 
-function [] = RUN_PE_COVID19_NoOver_V2_Tested(resultBase,nThetaGuesses,expdata)
+function [] = RUN_PE_COVID19_NoOver_V2_Tested_Exposed(resultBase,nThetaGuesses,expdata)
     
     %% Add necessary paths
     addpath('../Model')

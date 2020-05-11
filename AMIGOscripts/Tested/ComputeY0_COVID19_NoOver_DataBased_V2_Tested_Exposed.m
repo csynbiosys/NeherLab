@@ -1,5 +1,5 @@
 
-function [y0] = ComputeY0_COVID19_NoOver_DataBased_V2_Tested(agess,cases,N,dat,test)
+function [y0] = ComputeY0_COVID19_NoOver_DataBased_V2_Tested_Exposed(agess,cases,N,dat,test)
 
 y0cum = dat(:,1);
 
@@ -9,7 +9,6 @@ severe    = ([1, 3, 3, 3, 6, 10, 25, 35, 50]) / 100;
 critical  = ([5, 10, 10, 15, 20, 25, 35, 45, 55]) / 100;
 % critical = critical.*severe; % Luci added
 fatality  = ([30, 30, 30, 30, 30, 40, 40, 50, 50]) / 100;
-
 
 Inf = y0cum(1)*((agess.*confirmed)./sum(agess.*confirmed));
 agess2 = agess;

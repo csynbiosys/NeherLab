@@ -1,8 +1,8 @@
 %% Directory and file names
 
 maind = ['E:\UNI\D_Drive\PhD\Year_1\2020_04_7_COVID19\GitRepo\AMIGOscripts\Tested\'];
-dire = [maind, '\Tested\'];
-ftag = ['PE_Test1_TestedPeopleCase-'];
+dire = [maind, '\Instance2\'];
+ftag = ['PE_Test1_TestedExposed_FitALL-'];
 
 %% Check convergence curves
 figure
@@ -36,6 +36,25 @@ bestind = bestind(1);
 
 bestfit = load([dire,ftag,num2str(bestind),'.mat']);
 save([dire,'BestFit.mat'],'bestfit')
+
+
+
+%% Distributions of parameters
+
+mkdir([dire,'Distributions'])
+for i=1:length(string(bestfit.pe_inputs.PEsol.id_global_theta))
+    dist = normpdf([bestfit.pe_results.fit.thetabest(i)-(4*bestfit.pe_results.fit.g_var_cov_mat(i,i)):(bestfit.pe_results.fit.g_var_cov_mat(i,i)/100):bestfit.pe_results.fit.thetabest(i)+(4*bestfit.pe_results.fit.g_var_cov_mat(i,i))],...
+        bestfit.pe_results.fit.thetabest(i),bestfit.pe_results.fit.g_var_cov_mat(i,i));
+    figure
+    plot([bestfit.pe_results.fit.thetabest(i)-(4*bestfit.pe_results.fit.g_var_cov_mat(i,i)):(bestfit.pe_results.fit.g_var_cov_mat(i,i)/100):bestfit.pe_results.fit.thetabest(i)+(4*bestfit.pe_results.fit.g_var_cov_mat(i,i))],...
+        dist)
+    ylabel('Density')
+    nam = (bestfit.pe_inputs.PEsol.id_global_theta(i,:));
+    xlabel(nam)
+    saveas(gcf,strcat(dire,'Distributions\', 'KernelDensity_',nam(find(~isspace(nam))),'.png'))
+end
+
+
 
 %% Simulate against data
 r = 1:12:108;
@@ -116,37 +135,9 @@ set(gca, 'YScale', 'log')
 
 saveas(gcf,[dire, 'SimulationVSData.png'])
 
-%% Distributions of parameters
-
-mkdir([dire,'Distributions'])
-for i=1:length(string(bestfit.pe_inputs.PEsol.id_global_theta))
-    dist = normpdf([bestfit.pe_results.fit.thetabest(i)-(4*bestfit.pe_results.fit.g_var_cov_mat(i,i)):(bestfit.pe_results.fit.g_var_cov_mat(i,i)/100):bestfit.pe_results.fit.thetabest(i)+(4*bestfit.pe_results.fit.g_var_cov_mat(i,i))],...
-        bestfit.pe_results.fit.thetabest(i),bestfit.pe_results.fit.g_var_cov_mat(i,i));
-    figure
-    plot([bestfit.pe_results.fit.thetabest(i)-(4*bestfit.pe_results.fit.g_var_cov_mat(i,i)):(bestfit.pe_results.fit.g_var_cov_mat(i,i)/100):bestfit.pe_results.fit.thetabest(i)+(4*bestfit.pe_results.fit.g_var_cov_mat(i,i))],...
-        dist)
-    ylabel('Density')
-    nam = (bestfit.pe_inputs.PEsol.id_global_theta(i,:));
-    xlabel(nam)
-    saveas(gcf,strcat(dire,'Distributions\', 'KernelDensity_',nam(find(~isspace(nam))),'.png'))
-end
-
 
 %%
 
-
-
-
-[a,b] = size(bestfit.pe_results.sim.states{1});
-
-cumResCov19 = zeros(a,(b)/9);
-r = 1:12:b;
-for i=1:12 % States    
-    for j=1:9 % Agge groups
-        cumResCov19(:,i) = cumResCov19(:,i) + bestfit.pe_results.sim.states{1}(:,r(j));
-    end
-    r = r+1;
-end
 
 
 

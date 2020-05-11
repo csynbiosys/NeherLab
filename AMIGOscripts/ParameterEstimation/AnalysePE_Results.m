@@ -2,7 +2,7 @@
 
 maind = ['E:\UNI\D_Drive\PhD\Year_1\2020_04_7_COVID19\GitRepo\AMIGOscripts\ParameterEstimation\'];
 dire = [maind, '\Instance2\'];
-ftag = ['PE_Test3_HalfY0_R0eppTs-'];
+ftag = ['PE_Test4_HalfY0_R0eppTs_Imperial-'];
 
 %% Check convergence curves
 figure
