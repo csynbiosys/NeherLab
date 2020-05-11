@@ -15,7 +15,7 @@ switch country
     case {'Spain','spain', 'ESP'}
         fname = '../../policy/spain_mitigation.json';         
     case {'UK', 'uk', 'United Kingdom', 'GBR'}
-        fname = '../../policy/uk_policy.json';         
+        fname = '../../policy/uk_mitigation.json';         
 end
 
 %% Open JSON file
