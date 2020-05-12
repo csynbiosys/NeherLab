@@ -1,0 +1,27 @@
+Error using mex
+C:\Users\David\AppData\Local\Temp\mex_11294979782983242_1748\AMIGO_model.obj:AMIGO_model.c:(.rdata$.refptr.amigoSensRHS[.refptr.amigoSensRHS]+0x0): undefined reference to `amigoSensRHS'
+C:\Users\David\AppData\Local\Temp\mex_11294979782983242_1748\AMIGO_model.obj:AMIGO_model.c:(.rdata$.refptr.amigoJAC[.refptr.amigoJAC]+0x0): undefined reference to `amigoJAC'
+C:\Users\David\AppData\Local\Temp\mex_11294979782983242_1748\AMIGO_model.obj:AMIGO_model.c:(.rdata$.refptr.amigoRHS[.refptr.amigoRHS]+0x0): undefined reference to `amigoRHS'
+collect2.exe: error: ld returned 1 exit status
+
+
+Error in createCompileFile_AMIGO_model (line 124)
+eval(str);
+
+Error in AMIGO_gen_mex (line 56)
+        createCompileFile_AMIGO_model(inputs.model.odes_file,cvodes_mex_results_dir,inputs.pathd.AMIGO_path,inputs.model.debugmode);
+
+Error in AMIGO_gen_model (line 140)
+                AMIGO_gen_mex
+
+Error in AMIGO_Prep (line 120)
+inputs=AMIGO_gen_model(inputs,results);
+
+Error in PE_COVID19_NoOver_V2_NoInfected (line 248)
+    AMIGO_Prep(inputs);
+
+Error in parallel_function>make_general_channel/channel_general (line 938)
+                    F(C{:});
+
+Error in remoteParallelFunction (line 46)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));

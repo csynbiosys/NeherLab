@@ -2,7 +2,7 @@
 
 maind = ['E:\UNI\D_Drive\PhD\Year_1\2020_04_7_COVID19\GitRepo\AMIGOscripts\NoInfected\'];
 dire = [maind, '\Instance5\'];
-ftag = ['PE_Test1_NoInfected_R0Eppm_a-'];
+ftag = ['PE_Test2_NoInfected_R0EppIPD-'];
 
 %% Check convergence curves
 figure
