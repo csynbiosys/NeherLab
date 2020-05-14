@@ -98,7 +98,7 @@ figure
 subplot(5,1,1)
 hold on
 plot(bestfit.exps.t_s{1}, Dat.Data.exp_data{1}(1,:))
-% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,1))
+plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,1))
 plot(sim.sim.tsim{1}, cumResCov19(:,5))
 
 title('Inf')

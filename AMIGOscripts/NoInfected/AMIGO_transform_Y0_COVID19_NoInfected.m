@@ -23,11 +23,15 @@ function [privstruct,inputs]=AMIGO_transform_Y0_COVID19_NoInfected(inputs,result
 %   - AMIGO_PEcost: After line 100
 %   - AMIGO_PE: After line 246
 
+%   - AMIGO_IOCcost: Line 71
+%   - AMIGO_IOC: Line 184
+
 for iexp=1:inputs.exps.n_exp
     r = 1:12:length(inputs.exps.exp_y0{1});
     ages = AgeDistributions('ITA');
     for i=1:length(r)
         sus = privstruct.y_0{iexp}(r(i):r(i)+11);
+        disp(sus)
         sus = sus(2:10);
         sus(8) = [];
         Y0I = sum(sus);

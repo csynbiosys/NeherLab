@@ -1,8 +1,8 @@
 %% Directory and file names
 
 maind = ['E:\UNI\D_Drive\PhD\Year_1\2020_04_7_COVID19\GitRepo\AMIGOscripts\NoInfected\'];
-dire = [maind, '\Instance5\'];
-ftag = ['PE_Test4_NoInfected_FitAll-'];
+dire = [maind, '\Instance4\'];
+ftag = ['PE_Test5_NoInfected_R0Higher_FitAll-'];
 
 %% Check convergence curves
 figure
@@ -52,6 +52,8 @@ for j=1:100
             try
                 [cp, M_Tx, ~, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
                 M_Ty = min(max(1-ExtractMitigation_NoInfected(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp}),0.01),1);
+%                 M_Ty = ExtractMitigation_NoInfected(Dat.Data.country_id{iexp}, Dat.Data.start_date{iexp},Dat.Data.end_date{iexp});
+%                 M_Ty = 1-(0.5 + ((M_Ty-0)*(1-0.5))/(1-0));
             catch
                 [cp, M_Tx, M_Ty, ~] = Inputs_SIR(Dat.Data.start_date{iexp},Dat.Data.end_date{iexp},0,mitigations);
             end
@@ -191,7 +193,7 @@ cumResCov19 = zeros(a,(b)/9);
 r = 1:12:b;
 for i=1:12 % States    
     for j=1:9 % Agge groups
-        cumResCov19(:,i) = cumResCov19(:,i) + sim_results.sim.states{1}(:,r(j));
+        cumResCov19(:,i) = cumResCov19(:,i) + bestsim.sim_results.sim.states{1}(:,r(j));
     end
     r = r+1;
 end
@@ -213,7 +215,7 @@ title('Inf')
 subplot(5,1,2)
 hold on
 plot(Dat.Data.t_s{1}(1,:), Dat.Data.exp_data{1}(2,:))
-% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,2))
+% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,1))
 plot(bestsim.sim_results.sim.tsim{1}, cumResCov19(:,6))
 
 title('Sev')
@@ -223,7 +225,7 @@ title('Sev')
 subplot(5,1,3)
 hold on
 plot(Dat.Data.t_s{1}(1,:), Dat.Data.exp_data{1}(3,:))
-% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,3))
+% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,2))
 plot(bestsim.sim_results.sim.tsim{1}, cumResCov19(:,7))
 title('Cri')
 % set(gca, 'YScale', 'log')
@@ -232,7 +234,7 @@ title('Cri')
 subplot(5,1,4)
 hold on
 plot(Dat.Data.t_s{1}(1,:), Dat.Data.exp_data{1}(4,:))
-% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,4))
+% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,3))
 plot(bestsim.sim_results.sim.tsim{1}, cumResCov19(:,9))
 title('Rec')
 % set(gca, 'YScale', 'log')
@@ -241,7 +243,7 @@ title('Rec')
 subplot(5,1,5)
 hold on
 plot(Dat.Data.t_s{1}(1,:), Dat.Data.exp_data{1}(5,:))
-% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,5))
+% plot(bestfit.pe_results.sim.tsim{1}, bestfit.pe_results.sim.obs{1}(:,4))
 plot(bestsim.sim_results.sim.tsim{1}, cumResCov19(:,10))
 title('Fat')
 % set(gca, 'YScale', 'log')
