@@ -1,0 +1,2730 @@
+Error using mex
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:220:1: warning: null character(s) ignored
+ #define dCumHos_7 Ith(ydot,94)
+ ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:220:0: error: expected identifier or '(' before 'if'
+ #define dCumHos_7 Ith(ydot,94)
+ 
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:221:2: error: expected identifier or '(' before 'if'
+ #define dCumCri_7 Ith(ydot,95)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:222:2: error: expected identifier or '(' before 'if'
+ #define dSus_8    Ith(ydot,96)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:223:2: error: expected identifier or '(' before 'if'
+ #define dExp1_8   Ith(ydot,97)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:224:2: error: expected identifier or '(' before 'if'
+ #define dExp2_8   Ith(ydot,98)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:225:2: error: expected identifier or '(' before 'if'
+ #define dExp3_8   Ith(ydot,99)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:226:2: error: expected identifier or '(' before 'if'
+ #define dInf_8    Ith(ydot,100)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:227:2: error: expected identifier or '(' before 'if'
+ #define dSev_8    Ith(ydot,101)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:228:2: error: expected identifier or '(' before 'if'
+ #define dCri_8    Ith(ydot,102)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:229:2: error: expected identifier or '(' before 'if'
+ #define dRec_8    Ith(ydot,103)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:230:2: error: expected identifier or '(' before 'if'
+ #define dHoR_8    Ith(ydot,104)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:231:2: error: expected identifier or '(' before 'if'
+ #define dFat_8    Ith(ydot,105)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:232:2: error: expected identifier or '(' before 'if'
+ #define dCumHos_8 Ith(ydot,106)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:233:2: error: expected identifier or '(' before 'if'
+ #define dCumCri_8 Ith(ydot,107)
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:234:2: error: expected identifier or '(' before 'if'
+ 
+  ^ 
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:235:2: error: expected identifier or '(' before 'if'
+  /* *** Definition of the parameters *** */
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:236:2: error: expected identifier or '(' before 'if'
+ 
+  ^ 
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:237:2: error: expected identifier or '(' before 'if'
+ #define Npop  (*amigo_model).pars[0]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:238:2: error: expected identifier or '(' before 'if'
+ #define R_0   (*amigo_model).pars[1]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:239:2: error: expected identifier or '(' before 'if'
+ #define epp   (*amigo_model).pars[2]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:240:2: error: expected identifier or '(' before 'if'
+ #define ipd   (*amigo_model).pars[3]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:241:2: error: expected identifier or '(' before 'if'
+ #define ofs   (*amigo_model).pars[4]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:242:2: error: expected identifier or '(' before 'if'
+ #define HB    (*amigo_model).pars[5]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:243:2: error: expected identifier or '(' before 'if'
+ #define ICUb  (*amigo_model).pars[6]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:244:2: error: expected identifier or '(' before 'if'
+ #define t_i   (*amigo_model).pars[7]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:245:2: error: expected identifier or '(' before 'if'
+ #define t_l   (*amigo_model).pars[8]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:246:2: error: expected identifier or '(' before 'if'
+ #define t_c   (*amigo_model).pars[9]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:247:2: error: expected identifier or '(' before 'if'
+ #define t_h   (*amigo_model).pars[10]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:248:2: error: expected identifier or '(' before 'if'
+ #define ze_a0 (*amigo_model).pars[11]
+  ^~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:252:2: warning: data definition has no type or storage class
+ #define ze_a1 (*amigo_model).pars[15]
+  ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:252:2: warning: type defaults to 'int' in declaration of 'bet' [-Wimplicit-int]
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:252:6: error: 'R_0' undeclared here (not in a function)
+ #define ze_a1 (*amigo_model).pars[15]
+      ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:252:13: error: 'epp' undeclared here (not in a function)
+ #define ze_a1 (*amigo_model).pars[15]
+             ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:252:17: error: 'COS' undeclared here (not in a function)
+ #define ze_a1 (*amigo_model).pars[15]
+                 ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:252:22: error: 't_i' undeclared here (not in a function)
+ #define ze_a1 (*amigo_model).pars[15]
+                      ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:253:2: warning: data definition has no type or storage class
+ #define m_a1  (*amigo_model).pars[16]
+  ^~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:253:2: warning: type defaults to 'int' in declaration of 'Inft' [-Wimplicit-int]
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:18:22: error: 'y' undeclared here (not in a function)
+ #define Inf_0    Ith(y,4)
+                      ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:53: note: in definition of macro 'NV_CONTENT_S'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                     ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:18:18: note: in expansion of macro 'Ith'
+ #define Inf_0    Ith(y,4)
+                  ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:253:8: note: in expansion of macro 'Inf_0'
+ #define m_a1  (*amigo_model).pars[16]
+        ^~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:253:63: error: 'Npop' undeclared here (not in a function)
+ #define m_a1  (*amigo_model).pars[16]
+                                                               ^   
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:126:19: note: in expansion of macro 'Ith'
+ #define dSus_0    Ith(ydot,0)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:254:2: note: in expansion of macro 'dSus_0'
+ #define c_a1  (*amigo_model).pars[17]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:126:19: note: in expansion of macro 'Ith'
+ #define dSus_0    Ith(ydot,0)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:254:2: note: in expansion of macro 'dSus_0'
+ #define c_a1  (*amigo_model).pars[17]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:126:19: note: in expansion of macro 'Ith'
+ #define dSus_0    Ith(ydot,0)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:254:2: note: in expansion of macro 'dSus_0'
+ #define c_a1  (*amigo_model).pars[17]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:126:19: note: in expansion of macro 'Ith'
+ #define dSus_0    Ith(ydot,0)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:254:2: note: in expansion of macro 'dSus_0'
+ #define c_a1  (*amigo_model).pars[17]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:127:19: note: in expansion of macro 'Ith'
+ #define dExp1_0   Ith(ydot,1)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:255:2: note: in expansion of macro 'dExp1_0'
+ #define f_a1  (*amigo_model).pars[18]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:127:19: note: in expansion of macro 'Ith'
+ #define dExp1_0   Ith(ydot,1)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:255:2: note: in expansion of macro 'dExp1_0'
+ #define f_a1  (*amigo_model).pars[18]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:127:19: note: in expansion of macro 'Ith'
+ #define dExp1_0   Ith(ydot,1)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:255:2: note: in expansion of macro 'dExp1_0'
+ #define f_a1  (*amigo_model).pars[18]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:127:19: note: in expansion of macro 'Ith'
+ #define dExp1_0   Ith(ydot,1)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:255:2: note: in expansion of macro 'dExp1_0'
+ #define f_a1  (*amigo_model).pars[18]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:128:19: note: in expansion of macro 'Ith'
+ #define dExp2_0   Ith(ydot,2)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:256:2: note: in expansion of macro 'dExp2_0'
+ #define ze_a2 (*amigo_model).pars[19]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:128:19: note: in expansion of macro 'Ith'
+ #define dExp2_0   Ith(ydot,2)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:256:2: note: in expansion of macro 'dExp2_0'
+ #define ze_a2 (*amigo_model).pars[19]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:128:19: note: in expansion of macro 'Ith'
+ #define dExp2_0   Ith(ydot,2)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:256:2: note: in expansion of macro 'dExp2_0'
+ #define ze_a2 (*amigo_model).pars[19]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:128:19: note: in expansion of macro 'Ith'
+ #define dExp2_0   Ith(ydot,2)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:256:2: note: in expansion of macro 'dExp2_0'
+ #define ze_a2 (*amigo_model).pars[19]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:129:19: note: in expansion of macro 'Ith'
+ #define dExp3_0   Ith(ydot,3)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:257:2: note: in expansion of macro 'dExp3_0'
+ #define m_a2  (*amigo_model).pars[20]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:129:19: note: in expansion of macro 'Ith'
+ #define dExp3_0   Ith(ydot,3)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:257:2: note: in expansion of macro 'dExp3_0'
+ #define m_a2  (*amigo_model).pars[20]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:129:19: note: in expansion of macro 'Ith'
+ #define dExp3_0   Ith(ydot,3)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:257:2: note: in expansion of macro 'dExp3_0'
+ #define m_a2  (*amigo_model).pars[20]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:129:19: note: in expansion of macro 'Ith'
+ #define dExp3_0   Ith(ydot,3)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:257:2: note: in expansion of macro 'dExp3_0'
+ #define m_a2  (*amigo_model).pars[20]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:130:19: note: in expansion of macro 'Ith'
+ #define dInf_0    Ith(ydot,4)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:258:2: note: in expansion of macro 'dInf_0'
+ #define c_a2  (*amigo_model).pars[21]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:130:19: note: in expansion of macro 'Ith'
+ #define dInf_0    Ith(ydot,4)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:258:2: note: in expansion of macro 'dInf_0'
+ #define c_a2  (*amigo_model).pars[21]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:130:19: note: in expansion of macro 'Ith'
+ #define dInf_0    Ith(ydot,4)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:258:2: note: in expansion of macro 'dInf_0'
+ #define c_a2  (*amigo_model).pars[21]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:130:19: note: in expansion of macro 'Ith'
+ #define dInf_0    Ith(ydot,4)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:258:2: note: in expansion of macro 'dInf_0'
+ #define c_a2  (*amigo_model).pars[21]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:131:19: note: in expansion of macro 'Ith'
+ #define dSev_0    Ith(ydot,5)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:259:2: note: in expansion of macro 'dSev_0'
+ #define f_a2  (*amigo_model).pars[22]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:131:19: note: in expansion of macro 'Ith'
+ #define dSev_0    Ith(ydot,5)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:259:2: note: in expansion of macro 'dSev_0'
+ #define f_a2  (*amigo_model).pars[22]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:131:19: note: in expansion of macro 'Ith'
+ #define dSev_0    Ith(ydot,5)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:259:2: note: in expansion of macro 'dSev_0'
+ #define f_a2  (*amigo_model).pars[22]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:131:19: note: in expansion of macro 'Ith'
+ #define dSev_0    Ith(ydot,5)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:259:2: note: in expansion of macro 'dSev_0'
+ #define f_a2  (*amigo_model).pars[22]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:132:19: note: in expansion of macro 'Ith'
+ #define dCri_0    Ith(ydot,6)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:260:2: note: in expansion of macro 'dCri_0'
+ #define ze_a3 (*amigo_model).pars[23]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:132:19: note: in expansion of macro 'Ith'
+ #define dCri_0    Ith(ydot,6)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:260:2: note: in expansion of macro 'dCri_0'
+ #define ze_a3 (*amigo_model).pars[23]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:132:19: note: in expansion of macro 'Ith'
+ #define dCri_0    Ith(ydot,6)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:260:2: note: in expansion of macro 'dCri_0'
+ #define ze_a3 (*amigo_model).pars[23]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:132:19: note: in expansion of macro 'Ith'
+ #define dCri_0    Ith(ydot,6)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:260:2: note: in expansion of macro 'dCri_0'
+ #define ze_a3 (*amigo_model).pars[23]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:133:19: note: in expansion of macro 'Ith'
+ #define dRec_0    Ith(ydot,7)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:261:2: note: in expansion of macro 'dRec_0'
+ #define m_a3  (*amigo_model).pars[24]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:133:19: note: in expansion of macro 'Ith'
+ #define dRec_0    Ith(ydot,7)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:261:2: note: in expansion of macro 'dRec_0'
+ #define m_a3  (*amigo_model).pars[24]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:133:19: note: in expansion of macro 'Ith'
+ #define dRec_0    Ith(ydot,7)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:261:2: note: in expansion of macro 'dRec_0'
+ #define m_a3  (*amigo_model).pars[24]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:133:19: note: in expansion of macro 'Ith'
+ #define dRec_0    Ith(ydot,7)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:261:2: note: in expansion of macro 'dRec_0'
+ #define m_a3  (*amigo_model).pars[24]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:134:19: note: in expansion of macro 'Ith'
+ #define dHoR_0    Ith(ydot,8)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:262:2: note: in expansion of macro 'dHoR_0'
+ #define c_a3  (*amigo_model).pars[25]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:134:19: note: in expansion of macro 'Ith'
+ #define dHoR_0    Ith(ydot,8)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:262:2: note: in expansion of macro 'dHoR_0'
+ #define c_a3  (*amigo_model).pars[25]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:134:19: note: in expansion of macro 'Ith'
+ #define dHoR_0    Ith(ydot,8)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:262:2: note: in expansion of macro 'dHoR_0'
+ #define c_a3  (*amigo_model).pars[25]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:134:19: note: in expansion of macro 'Ith'
+ #define dHoR_0    Ith(ydot,8)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:262:2: note: in expansion of macro 'dHoR_0'
+ #define c_a3  (*amigo_model).pars[25]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:135:19: note: in expansion of macro 'Ith'
+ #define dFat_0    Ith(ydot,9)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:263:2: note: in expansion of macro 'dFat_0'
+ #define f_a3  (*amigo_model).pars[26]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:135:19: note: in expansion of macro 'Ith'
+ #define dFat_0    Ith(ydot,9)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:263:2: note: in expansion of macro 'dFat_0'
+ #define f_a3  (*amigo_model).pars[26]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:135:19: note: in expansion of macro 'Ith'
+ #define dFat_0    Ith(ydot,9)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:263:2: note: in expansion of macro 'dFat_0'
+ #define f_a3  (*amigo_model).pars[26]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:135:19: note: in expansion of macro 'Ith'
+ #define dFat_0    Ith(ydot,9)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:263:2: note: in expansion of macro 'dFat_0'
+ #define f_a3  (*amigo_model).pars[26]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:136:19: note: in expansion of macro 'Ith'
+ #define dCumHos_0 Ith(ydot,10)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:264:2: note: in expansion of macro 'dCumHos_0'
+ #define ze_a4 (*amigo_model).pars[27]
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:136:19: note: in expansion of macro 'Ith'
+ #define dCumHos_0 Ith(ydot,10)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:264:2: note: in expansion of macro 'dCumHos_0'
+ #define ze_a4 (*amigo_model).pars[27]
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:136:19: note: in expansion of macro 'Ith'
+ #define dCumHos_0 Ith(ydot,10)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:264:2: note: in expansion of macro 'dCumHos_0'
+ #define ze_a4 (*amigo_model).pars[27]
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:136:19: note: in expansion of macro 'Ith'
+ #define dCumHos_0 Ith(ydot,10)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:264:2: note: in expansion of macro 'dCumHos_0'
+ #define ze_a4 (*amigo_model).pars[27]
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:137:19: note: in expansion of macro 'Ith'
+ #define dCumCri_0 Ith(ydot,11)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:265:2: note: in expansion of macro 'dCumCri_0'
+ #define m_a4  (*amigo_model).pars[28]
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:137:19: note: in expansion of macro 'Ith'
+ #define dCumCri_0 Ith(ydot,11)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:265:2: note: in expansion of macro 'dCumCri_0'
+ #define m_a4  (*amigo_model).pars[28]
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:137:19: note: in expansion of macro 'Ith'
+ #define dCumCri_0 Ith(ydot,11)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:265:2: note: in expansion of macro 'dCumCri_0'
+ #define m_a4  (*amigo_model).pars[28]
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:137:19: note: in expansion of macro 'Ith'
+ #define dCumCri_0 Ith(ydot,11)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:265:2: note: in expansion of macro 'dCumCri_0'
+ #define m_a4  (*amigo_model).pars[28]
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:138:19: note: in expansion of macro 'Ith'
+ #define dSus_1    Ith(ydot,12)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:266:2: note: in expansion of macro 'dSus_1'
+ #define c_a4  (*amigo_model).pars[29]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:138:19: note: in expansion of macro 'Ith'
+ #define dSus_1    Ith(ydot,12)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:266:2: note: in expansion of macro 'dSus_1'
+ #define c_a4  (*amigo_model).pars[29]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:138:19: note: in expansion of macro 'Ith'
+ #define dSus_1    Ith(ydot,12)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:266:2: note: in expansion of macro 'dSus_1'
+ #define c_a4  (*amigo_model).pars[29]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:138:19: note: in expansion of macro 'Ith'
+ #define dSus_1    Ith(ydot,12)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:266:2: note: in expansion of macro 'dSus_1'
+ #define c_a4  (*amigo_model).pars[29]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:139:19: note: in expansion of macro 'Ith'
+ #define dExp1_1   Ith(ydot,13)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:267:2: note: in expansion of macro 'dExp1_1'
+ #define f_a4  (*amigo_model).pars[30]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:139:19: note: in expansion of macro 'Ith'
+ #define dExp1_1   Ith(ydot,13)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:267:2: note: in expansion of macro 'dExp1_1'
+ #define f_a4  (*amigo_model).pars[30]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:139:19: note: in expansion of macro 'Ith'
+ #define dExp1_1   Ith(ydot,13)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:267:2: note: in expansion of macro 'dExp1_1'
+ #define f_a4  (*amigo_model).pars[30]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:139:19: note: in expansion of macro 'Ith'
+ #define dExp1_1   Ith(ydot,13)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:267:2: note: in expansion of macro 'dExp1_1'
+ #define f_a4  (*amigo_model).pars[30]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:140:19: note: in expansion of macro 'Ith'
+ #define dExp2_1   Ith(ydot,14)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:268:2: note: in expansion of macro 'dExp2_1'
+ #define ze_a5 (*amigo_model).pars[31]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:140:19: note: in expansion of macro 'Ith'
+ #define dExp2_1   Ith(ydot,14)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:268:2: note: in expansion of macro 'dExp2_1'
+ #define ze_a5 (*amigo_model).pars[31]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:140:19: note: in expansion of macro 'Ith'
+ #define dExp2_1   Ith(ydot,14)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:268:2: note: in expansion of macro 'dExp2_1'
+ #define ze_a5 (*amigo_model).pars[31]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:140:19: note: in expansion of macro 'Ith'
+ #define dExp2_1   Ith(ydot,14)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:268:2: note: in expansion of macro 'dExp2_1'
+ #define ze_a5 (*amigo_model).pars[31]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:141:19: note: in expansion of macro 'Ith'
+ #define dExp3_1   Ith(ydot,15)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:269:2: note: in expansion of macro 'dExp3_1'
+ #define m_a5  (*amigo_model).pars[32]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:141:19: note: in expansion of macro 'Ith'
+ #define dExp3_1   Ith(ydot,15)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:269:2: note: in expansion of macro 'dExp3_1'
+ #define m_a5  (*amigo_model).pars[32]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:141:19: note: in expansion of macro 'Ith'
+ #define dExp3_1   Ith(ydot,15)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:269:2: note: in expansion of macro 'dExp3_1'
+ #define m_a5  (*amigo_model).pars[32]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:141:19: note: in expansion of macro 'Ith'
+ #define dExp3_1   Ith(ydot,15)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:269:2: note: in expansion of macro 'dExp3_1'
+ #define m_a5  (*amigo_model).pars[32]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:142:19: note: in expansion of macro 'Ith'
+ #define dInf_1    Ith(ydot,16)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:270:2: note: in expansion of macro 'dInf_1'
+ #define c_a5  (*amigo_model).pars[33]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:142:19: note: in expansion of macro 'Ith'
+ #define dInf_1    Ith(ydot,16)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:270:2: note: in expansion of macro 'dInf_1'
+ #define c_a5  (*amigo_model).pars[33]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:142:19: note: in expansion of macro 'Ith'
+ #define dInf_1    Ith(ydot,16)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:270:2: note: in expansion of macro 'dInf_1'
+ #define c_a5  (*amigo_model).pars[33]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:142:19: note: in expansion of macro 'Ith'
+ #define dInf_1    Ith(ydot,16)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:270:2: note: in expansion of macro 'dInf_1'
+ #define c_a5  (*amigo_model).pars[33]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:143:19: note: in expansion of macro 'Ith'
+ #define dSev_1    Ith(ydot,17)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:271:2: note: in expansion of macro 'dSev_1'
+ #define f_a5  (*amigo_model).pars[34]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:143:19: note: in expansion of macro 'Ith'
+ #define dSev_1    Ith(ydot,17)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:271:2: note: in expansion of macro 'dSev_1'
+ #define f_a5  (*amigo_model).pars[34]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:143:19: note: in expansion of macro 'Ith'
+ #define dSev_1    Ith(ydot,17)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:271:2: note: in expansion of macro 'dSev_1'
+ #define f_a5  (*amigo_model).pars[34]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:143:19: note: in expansion of macro 'Ith'
+ #define dSev_1    Ith(ydot,17)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:271:2: note: in expansion of macro 'dSev_1'
+ #define f_a5  (*amigo_model).pars[34]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:144:19: note: in expansion of macro 'Ith'
+ #define dCri_1    Ith(ydot,18)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:272:2: note: in expansion of macro 'dCri_1'
+ #define ze_a6 (*amigo_model).pars[35]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:144:19: note: in expansion of macro 'Ith'
+ #define dCri_1    Ith(ydot,18)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:272:2: note: in expansion of macro 'dCri_1'
+ #define ze_a6 (*amigo_model).pars[35]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:144:19: note: in expansion of macro 'Ith'
+ #define dCri_1    Ith(ydot,18)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:272:2: note: in expansion of macro 'dCri_1'
+ #define ze_a6 (*amigo_model).pars[35]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:144:19: note: in expansion of macro 'Ith'
+ #define dCri_1    Ith(ydot,18)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:272:2: note: in expansion of macro 'dCri_1'
+ #define ze_a6 (*amigo_model).pars[35]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:145:19: note: in expansion of macro 'Ith'
+ #define dRec_1    Ith(ydot,19)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:273:2: note: in expansion of macro 'dRec_1'
+ #define m_a6  (*amigo_model).pars[36]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:145:19: note: in expansion of macro 'Ith'
+ #define dRec_1    Ith(ydot,19)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:273:2: note: in expansion of macro 'dRec_1'
+ #define m_a6  (*amigo_model).pars[36]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:145:19: note: in expansion of macro 'Ith'
+ #define dRec_1    Ith(ydot,19)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:273:2: note: in expansion of macro 'dRec_1'
+ #define m_a6  (*amigo_model).pars[36]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:145:19: note: in expansion of macro 'Ith'
+ #define dRec_1    Ith(ydot,19)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:273:2: note: in expansion of macro 'dRec_1'
+ #define m_a6  (*amigo_model).pars[36]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:146:19: note: in expansion of macro 'Ith'
+ #define dHoR_1    Ith(ydot,20)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:274:2: note: in expansion of macro 'dHoR_1'
+ #define c_a6  (*amigo_model).pars[37]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:146:19: note: in expansion of macro 'Ith'
+ #define dHoR_1    Ith(ydot,20)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:274:2: note: in expansion of macro 'dHoR_1'
+ #define c_a6  (*amigo_model).pars[37]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:146:19: note: in expansion of macro 'Ith'
+ #define dHoR_1    Ith(ydot,20)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:274:2: note: in expansion of macro 'dHoR_1'
+ #define c_a6  (*amigo_model).pars[37]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:146:19: note: in expansion of macro 'Ith'
+ #define dHoR_1    Ith(ydot,20)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:274:2: note: in expansion of macro 'dHoR_1'
+ #define c_a6  (*amigo_model).pars[37]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:147:19: note: in expansion of macro 'Ith'
+ #define dFat_1    Ith(ydot,21)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:275:2: note: in expansion of macro 'dFat_1'
+ #define f_a6  (*amigo_model).pars[38]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:147:19: note: in expansion of macro 'Ith'
+ #define dFat_1    Ith(ydot,21)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:275:2: note: in expansion of macro 'dFat_1'
+ #define f_a6  (*amigo_model).pars[38]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:147:19: note: in expansion of macro 'Ith'
+ #define dFat_1    Ith(ydot,21)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:275:2: note: in expansion of macro 'dFat_1'
+ #define f_a6  (*amigo_model).pars[38]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:147:19: note: in expansion of macro 'Ith'
+ #define dFat_1    Ith(ydot,21)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:275:2: note: in expansion of macro 'dFat_1'
+ #define f_a6  (*amigo_model).pars[38]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:148:19: note: in expansion of macro 'Ith'
+ #define dCumHos_1 Ith(ydot,22)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:276:2: note: in expansion of macro 'dCumHos_1'
+ #define ze_a7 (*amigo_model).pars[39]
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:148:19: note: in expansion of macro 'Ith'
+ #define dCumHos_1 Ith(ydot,22)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:276:2: note: in expansion of macro 'dCumHos_1'
+ #define ze_a7 (*amigo_model).pars[39]
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:148:19: note: in expansion of macro 'Ith'
+ #define dCumHos_1 Ith(ydot,22)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:276:2: note: in expansion of macro 'dCumHos_1'
+ #define ze_a7 (*amigo_model).pars[39]
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:148:19: note: in expansion of macro 'Ith'
+ #define dCumHos_1 Ith(ydot,22)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:276:2: note: in expansion of macro 'dCumHos_1'
+ #define ze_a7 (*amigo_model).pars[39]
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:149:19: note: in expansion of macro 'Ith'
+ #define dCumCri_1 Ith(ydot,23)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:277:2: note: in expansion of macro 'dCumCri_1'
+ #define m_a7  (*amigo_model).pars[40]
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:149:19: note: in expansion of macro 'Ith'
+ #define dCumCri_1 Ith(ydot,23)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:277:2: note: in expansion of macro 'dCumCri_1'
+ #define m_a7  (*amigo_model).pars[40]
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:149:19: note: in expansion of macro 'Ith'
+ #define dCumCri_1 Ith(ydot,23)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:277:2: note: in expansion of macro 'dCumCri_1'
+ #define m_a7  (*amigo_model).pars[40]
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:149:19: note: in expansion of macro 'Ith'
+ #define dCumCri_1 Ith(ydot,23)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:277:2: note: in expansion of macro 'dCumCri_1'
+ #define m_a7  (*amigo_model).pars[40]
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:150:19: note: in expansion of macro 'Ith'
+ #define dSus_2    Ith(ydot,24)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:278:2: note: in expansion of macro 'dSus_2'
+ #define c_a7  (*amigo_model).pars[41]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:150:19: note: in expansion of macro 'Ith'
+ #define dSus_2    Ith(ydot,24)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:278:2: note: in expansion of macro 'dSus_2'
+ #define c_a7  (*amigo_model).pars[41]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:150:19: note: in expansion of macro 'Ith'
+ #define dSus_2    Ith(ydot,24)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:278:2: note: in expansion of macro 'dSus_2'
+ #define c_a7  (*amigo_model).pars[41]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:150:19: note: in expansion of macro 'Ith'
+ #define dSus_2    Ith(ydot,24)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:278:2: note: in expansion of macro 'dSus_2'
+ #define c_a7  (*amigo_model).pars[41]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:151:19: note: in expansion of macro 'Ith'
+ #define dExp1_2   Ith(ydot,25)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:279:2: note: in expansion of macro 'dExp1_2'
+ #define f_a7  (*amigo_model).pars[42]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:151:19: note: in expansion of macro 'Ith'
+ #define dExp1_2   Ith(ydot,25)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:279:2: note: in expansion of macro 'dExp1_2'
+ #define f_a7  (*amigo_model).pars[42]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:151:19: note: in expansion of macro 'Ith'
+ #define dExp1_2   Ith(ydot,25)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:279:2: note: in expansion of macro 'dExp1_2'
+ #define f_a7  (*amigo_model).pars[42]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:151:19: note: in expansion of macro 'Ith'
+ #define dExp1_2   Ith(ydot,25)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:279:2: note: in expansion of macro 'dExp1_2'
+ #define f_a7  (*amigo_model).pars[42]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:152:19: note: in expansion of macro 'Ith'
+ #define dExp2_2   Ith(ydot,26)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:280:2: note: in expansion of macro 'dExp2_2'
+ #define ze_a8 (*amigo_model).pars[43]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:152:19: note: in expansion of macro 'Ith'
+ #define dExp2_2   Ith(ydot,26)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:280:2: note: in expansion of macro 'dExp2_2'
+ #define ze_a8 (*amigo_model).pars[43]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:152:19: note: in expansion of macro 'Ith'
+ #define dExp2_2   Ith(ydot,26)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:280:2: note: in expansion of macro 'dExp2_2'
+ #define ze_a8 (*amigo_model).pars[43]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:152:19: note: in expansion of macro 'Ith'
+ #define dExp2_2   Ith(ydot,26)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:280:2: note: in expansion of macro 'dExp2_2'
+ #define ze_a8 (*amigo_model).pars[43]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:153:19: note: in expansion of macro 'Ith'
+ #define dExp3_2   Ith(ydot,27)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:281:2: note: in expansion of macro 'dExp3_2'
+ #define m_a8  (*amigo_model).pars[44]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:153:19: note: in expansion of macro 'Ith'
+ #define dExp3_2   Ith(ydot,27)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:281:2: note: in expansion of macro 'dExp3_2'
+ #define m_a8  (*amigo_model).pars[44]
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:153:19: note: in expansion of macro 'Ith'
+ #define dExp3_2   Ith(ydot,27)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:281:2: note: in expansion of macro 'dExp3_2'
+ #define m_a8  (*amigo_model).pars[44]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:153:19: note: in expansion of macro 'Ith'
+ #define dExp3_2   Ith(ydot,27)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:281:2: note: in expansion of macro 'dExp3_2'
+ #define m_a8  (*amigo_model).pars[44]
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:154:19: note: in expansion of macro 'Ith'
+ #define dInf_2    Ith(ydot,28)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:282:2: note: in expansion of macro 'dInf_2'
+ #define c_a8  (*amigo_model).pars[45]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:154:19: note: in expansion of macro 'Ith'
+ #define dInf_2    Ith(ydot,28)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:282:2: note: in expansion of macro 'dInf_2'
+ #define c_a8  (*amigo_model).pars[45]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:154:19: note: in expansion of macro 'Ith'
+ #define dInf_2    Ith(ydot,28)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:282:2: note: in expansion of macro 'dInf_2'
+ #define c_a8  (*amigo_model).pars[45]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:154:19: note: in expansion of macro 'Ith'
+ #define dInf_2    Ith(ydot,28)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:282:2: note: in expansion of macro 'dInf_2'
+ #define c_a8  (*amigo_model).pars[45]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:155:19: note: in expansion of macro 'Ith'
+ #define dSev_2    Ith(ydot,29)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:283:2: note: in expansion of macro 'dSev_2'
+ #define f_a8  (*amigo_model).pars[46]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:155:19: note: in expansion of macro 'Ith'
+ #define dSev_2    Ith(ydot,29)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:283:2: note: in expansion of macro 'dSev_2'
+ #define f_a8  (*amigo_model).pars[46]
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:155:19: note: in expansion of macro 'Ith'
+ #define dSev_2    Ith(ydot,29)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:283:2: note: in expansion of macro 'dSev_2'
+ #define f_a8  (*amigo_model).pars[46]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:155:19: note: in expansion of macro 'Ith'
+ #define dSev_2    Ith(ydot,29)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:283:2: note: in expansion of macro 'dSev_2'
+ #define f_a8  (*amigo_model).pars[46]
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:156:19: note: in expansion of macro 'Ith'
+ #define dCri_2    Ith(ydot,30)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:284:2: note: in expansion of macro 'dCri_2'
+ #define Mt  ((*amigo_model).controls_v[0][(*amigo_model).index_t_stim]+(t-(*amigo_model).tlast)*(*amigo_model).slope[0][(*amigo_model).index_t_stim])
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:156:19: note: in expansion of macro 'Ith'
+ #define dCri_2    Ith(ydot,30)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:284:2: note: in expansion of macro 'dCri_2'
+ #define Mt  ((*amigo_model).controls_v[0][(*amigo_model).index_t_stim]+(t-(*amigo_model).tlast)*(*amigo_model).slope[0][(*amigo_model).index_t_stim])
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:156:19: note: in expansion of macro 'Ith'
+ #define dCri_2    Ith(ydot,30)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:284:2: note: in expansion of macro 'dCri_2'
+ #define Mt  ((*amigo_model).controls_v[0][(*amigo_model).index_t_stim]+(t-(*amigo_model).tlast)*(*amigo_model).slope[0][(*amigo_model).index_t_stim])
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:156:19: note: in expansion of macro 'Ith'
+ #define dCri_2    Ith(ydot,30)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:284:2: note: in expansion of macro 'dCri_2'
+ #define Mt  ((*amigo_model).controls_v[0][(*amigo_model).index_t_stim]+(t-(*amigo_model).tlast)*(*amigo_model).slope[0][(*amigo_model).index_t_stim])
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:157:19: note: in expansion of macro 'Ith'
+ #define dRec_2    Ith(ydot,31)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:285:2: note: in expansion of macro 'dRec_2'
+ #define COS ((*amigo_model).controls_v[1][(*amigo_model).index_t_stim]+(t-(*amigo_model).tlast)*(*amigo_model).slope[1][(*amigo_model).index_t_stim])
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:157:19: note: in expansion of macro 'Ith'
+ #define dRec_2    Ith(ydot,31)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:285:2: note: in expansion of macro 'dRec_2'
+ #define COS ((*amigo_model).controls_v[1][(*amigo_model).index_t_stim]+(t-(*amigo_model).tlast)*(*amigo_model).slope[1][(*amigo_model).index_t_stim])
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:157:19: note: in expansion of macro 'Ith'
+ #define dRec_2    Ith(ydot,31)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:285:2: note: in expansion of macro 'dRec_2'
+ #define COS ((*amigo_model).controls_v[1][(*amigo_model).index_t_stim]+(t-(*amigo_model).tlast)*(*amigo_model).slope[1][(*amigo_model).index_t_stim])
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:157:19: note: in expansion of macro 'Ith'
+ #define dRec_2    Ith(ydot,31)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:285:2: note: in expansion of macro 'dRec_2'
+ #define COS ((*amigo_model).controls_v[1][(*amigo_model).index_t_stim]+(t-(*amigo_model).tlast)*(*amigo_model).slope[1][(*amigo_model).index_t_stim])
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:158:19: note: in expansion of macro 'Ith'
+ #define dHoR_2    Ith(ydot,32)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:286:2: note: in expansion of macro 'dHoR_2'
+ 
+  ^     
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:158:19: note: in expansion of macro 'Ith'
+ #define dHoR_2    Ith(ydot,32)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:286:2: note: in expansion of macro 'dHoR_2'
+ 
+  ^     
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:158:19: note: in expansion of macro 'Ith'
+ #define dHoR_2    Ith(ydot,32)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:286:2: note: in expansion of macro 'dHoR_2'
+ 
+  ^     
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:158:19: note: in expansion of macro 'Ith'
+ #define dHoR_2    Ith(ydot,32)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:286:2: note: in expansion of macro 'dHoR_2'
+ 
+  ^     
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:159:19: note: in expansion of macro 'Ith'
+ #define dFat_2    Ith(ydot,33)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:287:2: note: in expansion of macro 'dFat_2'
+  /* *** Definition of the algebraic variables *** */
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:159:19: note: in expansion of macro 'Ith'
+ #define dFat_2    Ith(ydot,33)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:287:2: note: in expansion of macro 'dFat_2'
+  /* *** Definition of the algebraic variables *** */
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:159:19: note: in expansion of macro 'Ith'
+ #define dFat_2    Ith(ydot,33)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:287:2: note: in expansion of macro 'dFat_2'
+  /* *** Definition of the algebraic variables *** */
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:159:19: note: in expansion of macro 'Ith'
+ #define dFat_2    Ith(ydot,33)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:287:2: note: in expansion of macro 'dFat_2'
+  /* *** Definition of the algebraic variables *** */
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:160:19: note: in expansion of macro 'Ith'
+ #define dCumHos_2 Ith(ydot,34)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:288:2: note: in expansion of macro 'dCumHos_2'
+ 
+  ^        
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:160:19: note: in expansion of macro 'Ith'
+ #define dCumHos_2 Ith(ydot,34)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:288:2: note: in expansion of macro 'dCumHos_2'
+ 
+  ^        
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:160:19: note: in expansion of macro 'Ith'
+ #define dCumHos_2 Ith(ydot,34)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:288:2: note: in expansion of macro 'dCumHos_2'
+ 
+  ^        
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:160:19: note: in expansion of macro 'Ith'
+ #define dCumHos_2 Ith(ydot,34)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:288:2: note: in expansion of macro 'dCumHos_2'
+ 
+  ^        
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:161:19: note: in expansion of macro 'Ith'
+ #define dCumCri_2 Ith(ydot,35)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:289:2: note: in expansion of macro 'dCumCri_2'
+  double bet;
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:161:19: note: in expansion of macro 'Ith'
+ #define dCumCri_2 Ith(ydot,35)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:289:2: note: in expansion of macro 'dCumCri_2'
+  double bet;
+  ^~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:161:19: note: in expansion of macro 'Ith'
+ #define dCumCri_2 Ith(ydot,35)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:289:2: note: in expansion of macro 'dCumCri_2'
+  double bet;
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:161:19: note: in expansion of macro 'Ith'
+ #define dCumCri_2 Ith(ydot,35)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:289:2: note: in expansion of macro 'dCumCri_2'
+  double bet;
+  ^~~~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:162:19: note: in expansion of macro 'Ith'
+ #define dSus_3    Ith(ydot,36)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:290:2: note: in expansion of macro 'dSus_3'
+  double Inft;
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:162:19: note: in expansion of macro 'Ith'
+ #define dSus_3    Ith(ydot,36)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:290:2: note: in expansion of macro 'dSus_3'
+  double Inft;
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:162:19: note: in expansion of macro 'Ith'
+ #define dSus_3    Ith(ydot,36)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:290:2: note: in expansion of macro 'dSus_3'
+  double Inft;
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:162:19: note: in expansion of macro 'Ith'
+ #define dSus_3    Ith(ydot,36)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:290:2: note: in expansion of macro 'dSus_3'
+  double Inft;
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:163:19: note: in expansion of macro 'Ith'
+ #define dExp1_3   Ith(ydot,37)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:291:2: note: in expansion of macro 'dExp1_3'
+ /* Right hand side of the system (f(t,x,p))*/
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:163:19: note: in expansion of macro 'Ith'
+ #define dExp1_3   Ith(ydot,37)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:291:2: note: in expansion of macro 'dExp1_3'
+ /* Right hand side of the system (f(t,x,p))*/
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:163:19: note: in expansion of macro 'Ith'
+ #define dExp1_3   Ith(ydot,37)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:291:2: note: in expansion of macro 'dExp1_3'
+ /* Right hand side of the system (f(t,x,p))*/
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:163:19: note: in expansion of macro 'Ith'
+ #define dExp1_3   Ith(ydot,37)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:291:2: note: in expansion of macro 'dExp1_3'
+ /* Right hand side of the system (f(t,x,p))*/
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:164:19: note: in expansion of macro 'Ith'
+ #define dExp2_3   Ith(ydot,38)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:292:2: note: in expansion of macro 'dExp2_3'
+ int amigoRHS(realtype t, N_Vector y, N_Vector ydot, void *data){
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:164:19: note: in expansion of macro 'Ith'
+ #define dExp2_3   Ith(ydot,38)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:292:2: note: in expansion of macro 'dExp2_3'
+ int amigoRHS(realtype t, N_Vector y, N_Vector ydot, void *data){
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:164:19: note: in expansion of macro 'Ith'
+ #define dExp2_3   Ith(ydot,38)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:292:2: note: in expansion of macro 'dExp2_3'
+ int amigoRHS(realtype t, N_Vector y, N_Vector ydot, void *data){
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:164:19: note: in expansion of macro 'Ith'
+ #define dExp2_3   Ith(ydot,38)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:292:2: note: in expansion of macro 'dExp2_3'
+ int amigoRHS(realtype t, N_Vector y, N_Vector ydot, void *data){
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:165:19: note: in expansion of macro 'Ith'
+ #define dExp3_3   Ith(ydot,39)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:293:2: note: in expansion of macro 'dExp3_3'
+  AMIGO_model* amigo_model=(AMIGO_model*)data;
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:165:19: note: in expansion of macro 'Ith'
+ #define dExp3_3   Ith(ydot,39)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:293:2: note: in expansion of macro 'dExp3_3'
+  AMIGO_model* amigo_model=(AMIGO_model*)data;
+  ^~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:165:19: note: in expansion of macro 'Ith'
+ #define dExp3_3   Ith(ydot,39)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:293:2: note: in expansion of macro 'dExp3_3'
+  AMIGO_model* amigo_model=(AMIGO_model*)data;
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:165:19: note: in expansion of macro 'Ith'
+ #define dExp3_3   Ith(ydot,39)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:293:2: note: in expansion of macro 'dExp3_3'
+  AMIGO_model* amigo_model=(AMIGO_model*)data;
+  ^~~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:166:19: note: in expansion of macro 'Ith'
+ #define dInf_3    Ith(ydot,40)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:294:2: note: in expansion of macro 'dInf_3'
+  ctrlcCheckPoint(__FILE__, __LINE__);
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:166:19: note: in expansion of macro 'Ith'
+ #define dInf_3    Ith(ydot,40)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:294:2: note: in expansion of macro 'dInf_3'
+  ctrlcCheckPoint(__FILE__, __LINE__);
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:166:19: note: in expansion of macro 'Ith'
+ #define dInf_3    Ith(ydot,40)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:294:2: note: in expansion of macro 'dInf_3'
+  ctrlcCheckPoint(__FILE__, __LINE__);
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:166:19: note: in expansion of macro 'Ith'
+ #define dInf_3    Ith(ydot,40)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:294:2: note: in expansion of macro 'dInf_3'
+  ctrlcCheckPoint(__FILE__, __LINE__);
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:167:19: note: in expansion of macro 'Ith'
+ #define dSev_3    Ith(ydot,41)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:295:2: note: in expansion of macro 'dSev_3'
+ 
+  ^     
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:167:19: note: in expansion of macro 'Ith'
+ #define dSev_3    Ith(ydot,41)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:295:2: note: in expansion of macro 'dSev_3'
+ 
+  ^     
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:167:19: note: in expansion of macro 'Ith'
+ #define dSev_3    Ith(ydot,41)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:295:2: note: in expansion of macro 'dSev_3'
+ 
+  ^     
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:167:19: note: in expansion of macro 'Ith'
+ #define dSev_3    Ith(ydot,41)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:295:2: note: in expansion of macro 'dSev_3'
+ 
+  ^     
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:168:19: note: in expansion of macro 'Ith'
+ #define dCri_3    Ith(ydot,42)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:296:2: note: in expansion of macro 'dCri_3'
+ 
+  ^     
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:168:19: note: in expansion of macro 'Ith'
+ #define dCri_3    Ith(ydot,42)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:296:2: note: in expansion of macro 'dCri_3'
+ 
+  ^     
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:168:19: note: in expansion of macro 'Ith'
+ #define dCri_3    Ith(ydot,42)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:296:2: note: in expansion of macro 'dCri_3'
+ 
+  ^     
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:168:19: note: in expansion of macro 'Ith'
+ #define dCri_3    Ith(ydot,42)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:296:2: note: in expansion of macro 'dCri_3'
+ 
+  ^     
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:169:19: note: in expansion of macro 'Ith'
+ #define dRec_3    Ith(ydot,43)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:297:2: note: in expansion of macro 'dRec_3'
+  /* *** Test for negative states *** */
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:169:19: note: in expansion of macro 'Ith'
+ #define dRec_3    Ith(ydot,43)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:297:2: note: in expansion of macro 'dRec_3'
+  /* *** Test for negative states *** */
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:169:19: note: in expansion of macro 'Ith'
+ #define dRec_3    Ith(ydot,43)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:297:2: note: in expansion of macro 'dRec_3'
+  /* *** Test for negative states *** */
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:169:19: note: in expansion of macro 'Ith'
+ #define dRec_3    Ith(ydot,43)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:297:2: note: in expansion of macro 'dRec_3'
+  /* *** Test for negative states *** */
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:170:19: note: in expansion of macro 'Ith'
+ #define dHoR_3    Ith(ydot,44)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:298:2: note: in expansion of macro 'dHoR_3'
+ 
+  ^     
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:170:19: note: in expansion of macro 'Ith'
+ #define dHoR_3    Ith(ydot,44)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:298:2: note: in expansion of macro 'dHoR_3'
+ 
+  ^     
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:170:19: note: in expansion of macro 'Ith'
+ #define dHoR_3    Ith(ydot,44)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:298:2: note: in expansion of macro 'dHoR_3'
+ 
+  ^     
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:170:19: note: in expansion of macro 'Ith'
+ #define dHoR_3    Ith(ydot,44)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:298:2: note: in expansion of macro 'dHoR_3'
+ 
+  ^     
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:7:0,
+                 from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:29: error: expected identifier or '(' before 'N_VectorContent_Serial'
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                             ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:171:19: note: in expansion of macro 'Ith'
+ #define dFat_3    Ith(ydot,45)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:299:2: note: in expansion of macro 'dFat_3'
+  if(Sus_0    <0.0) Sus_0    = 0;
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:126:52: error: expected ')' before '(' token
+ #define NV_CONTENT_S(v)  ( (N_VectorContent_Serial)(v->content) )
+                                                    ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:28: note: in expansion of macro 'NV_CONTENT_S'
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                            ^~~~~~~~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:171:19: note: in expansion of macro 'Ith'
+ #define dFat_3    Ith(ydot,45)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:299:2: note: in expansion of macro 'dFat_3'
+  if(Sus_0    <0.0) Sus_0    = 0;
+  ^~~~~~
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_cvodes/nvector/nvector_serial.h:132:43: error: expected ')' before '->' token
+ #define NV_DATA_S(v)     ( NV_CONTENT_S(v)->data )
+                                           ^
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:20: note: in expansion of macro 'NV_DATA_S'
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                    ^~~~~~~~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:171:19: note: in expansion of macro 'Ith'
+ #define dFat_3    Ith(ydot,45)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:299:2: note: in expansion of macro 'dFat_3'
+  if(Sus_0    <0.0) Sus_0    = 0;
+  ^~~~~~
+In file included from D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/amigoRHS.h:1:0,
+                 from D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:1:
+D:\AMIGO2_R2019a\Kernel\IVP_solvers\cvodes\C_src4Amigo\include\include_amigo/AMIGO_model.h:18:32: error: expected ')' before '[' token
+ #define Ith(v,i) ( NV_DATA_S(v)[i] )
+                                ^
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:171:19: note: in expansion of macro 'Ith'
+ #define dFat_3    Ith(ydot,45)
+                   ^~~
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:299:2: note: in expansion of macro 'dFat_3'
+  if(Sus_0    <0.0) Sus_0    = 0;
+  ^~~~~~
+
+
+Error in createCompileFile_AMIGO_model (line 124)
+eval(str);
+
+Error in AMIGO_gen_mex (line 56)
+        createCompileFile_AMIGO_model(inputs.model.odes_file,cvodes_mex_results_dir,inputs.pathd.AMIGO_path,inputs.model.debugmode);
+
+Error in AMIGO_gen_model (line 140)
+                AMIGO_gen_mex
+
+Error in AMIGO_Prep (line 120)
+inputs=AMIGO_gen_model(inputs,results);
+
+Error in PE_COVID19_NoOver_V2_NoInfected (line 248)
+    AMIGO_Prep(inputs);
+
+Error in parallel_function>make_general_channel/channel_general (line 938)
+                    F(C{:});
+
+Error in remoteParallelFunction (line 46)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));

@@ -1,0 +1,27 @@
+Error using mex
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c: In function 'amigoRHS':
+D:\AMIGO2_R2019a\Results\NeherModelCovid19_PE2020-05-14-102249\amigoRHS.c:474:2: error: expected declaration or statement at end of input
+  dExp2_5=((3*Exp1_5)/t_l)-((3*Exp2_5)/t_l);
+  ^~~~~~~
+
+
+Error in createCompileFile_AMIGO_model (line 124)
+eval(str);
+
+Error in AMIGO_gen_mex (line 56)
+        createCompileFile_AMIGO_model(inputs.model.odes_file,cvodes_mex_results_dir,inputs.pathd.AMIGO_path,inputs.model.debugmode);
+
+Error in AMIGO_gen_model (line 140)
+                AMIGO_gen_mex
+
+Error in AMIGO_Prep (line 120)
+inputs=AMIGO_gen_model(inputs,results);
+
+Error in PE_COVID19_NoOver_V2_NoInfected (line 248)
+    AMIGO_Prep(inputs);
+
+Error in parallel_function>make_general_channel/channel_general (line 938)
+                    F(C{:});
+
+Error in remoteParallelFunction (line 46)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));

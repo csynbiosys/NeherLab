@@ -1,8 +1,8 @@
 %% Directory and file names
 
 maind = ['E:\UNI\D_Drive\PhD\Year_1\2020_04_7_COVID19\GitRepo\AMIGOscripts\NoInfected\'];
-dire = [maind, '\Instance4\'];
-ftag = ['PE_Test5_NoInfected_R0Higher_FitAll-'];
+dire = [maind, '\Instance2\'];
+ftag = ['PE_Test6_NoInfected_R0Epp_ParamsLucia_NoIPD-'];
 
 %% Check convergence curves
 figure
