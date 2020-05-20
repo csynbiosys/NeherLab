@@ -2,7 +2,7 @@
 
 maind = ['E:\UNI\D_Drive\PhD\Year_1\2020_04_7_COVID19\GitRepo\AMIGOscripts\NoInfected\'];
 dire = [maind, '\Instance5\'];
-ftag = ['PE_Test8_NoInfected_IOC_Error03_HigherBounds_NoParams-'];
+ftag = ['PE_Test9_NoInfected_IOC_Error03_HigherBounds_NoParams_MoreIter-'];
 
 %% Check convergence curves
 figure

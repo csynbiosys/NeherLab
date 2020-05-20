@@ -1,0 +1,19 @@
+Index exceeds the number of array elements (0).
+
+Error in ess_kernel (line 637)
+Refset=sol(iii(1:first_members),:);
+
+Error in AMIGO_call_OPTsolver (line 233)
+                [res_ssm]=ess_kernel(problem,inputs.nlpsol.eSS,inputs,results,privstruct);
+
+Error in AMIGO_PE (line 181)
+[results,privstruct]=AMIGO_call_OPTsolver(...
+
+Error in PE_COVID19_NoOver_V2_Spain (line 254)
+    results = AMIGO_PE(inputs);
+
+Error in parallel_function>make_general_channel/channel_general (line 938)
+                    F(C{:});
+
+Error in remoteParallelFunction (line 46)
+        out = parallel.internal.pool.serialize(feval(channel, channelArgs{:}));
